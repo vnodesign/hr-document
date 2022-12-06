@@ -1,0 +1,108 @@
+{
+  "fe": {
+    "title": "Front End",
+    "type": "menu",
+    "items": {
+      "index": {
+        "title": "Front End là gì",
+        "href": "/fe"
+      },
+      "reactjs": {
+        "title": "ReactJS",
+        "href": "/fe/reactjs"
+      },
+      "vuejs": {
+        "title": "VueJS",
+        "href": "/fe/vuejs"
+      },
+      "svelte": {
+        "title": "Svelte",
+        "href": "/fe/svelte"
+      },
+      "nuxtjs": {
+        "title": "NuxtJS",
+        "href": "/fe/nuxtjs"
+      },
+      "angularjs": {
+        "title": "AngularJS",
+        "href": "/fe/angularjs"
+      },
+      "tong-ket-ve-front-end": {
+        "title": "Tổng kết về Front End",
+        "href": "/fe/tong-ket-ve-front-end"
+      }
+    }
+  },
+  "be": {
+    "title": "Back End",
+    "type": "menu",
+    "items": {
+      "index": {
+        "title": "Back End là gì",
+        "href": "/be"
+      },
+      "java": {
+        "title": "Ngôn ngữ lập trình Java",
+        "href": "/be/java"
+      },
+      "php": {
+        "title": "Ngôn ngữ lập trình PHP",
+        "href": "/be/php"
+      },
+      "ruby": {
+        "title": "Ngôn ngữ lập trình Ruby",
+        "href": "/be/ruby"
+      },
+      "sql": {
+        "title": "Ngôn ngữ dành cho truy vấn SQL",
+        "href": "/be/sql"
+      },
+      "javascript": {
+        "title": "Ngôn ngữ lập trình JavaScript",
+        "href": "/be/javascript"
+      }
+    }
+  },
+  "linux": {
+    "title": "Linux",
+    "type": "menu",
+    "items": {
+      "index": {
+        "title": "Hệ điều hành Linux là gì",
+        "href": "/linux"
+      },
+      "ubuntu": {
+        "title": "Hệ điều hành Ubuntu",
+        "href": "/linux/ubuntu"
+      },
+      "fedora": {
+        "title": "Hệ điều hành Fedora (Red Hat)",
+        "href": "/linux/fedora"
+      },
+      "linux-mint": {
+        "title": "Hệ điều hành Linux Mint",
+        "href": "/linux/linux-mint"
+      },
+      "kali-linux": {
+        "title": "Hệ điều hành Kali Linux",
+        "href": "/linux/kali-linux"
+      },
+      "centos": {
+        "title": "Hệ điều hành CentOS",
+        "href": "/linux/centos"
+      },
+      "android": {
+        "title": "Hệ điều hành Android",
+        "href": "/linux/android"
+      },
+      "server": {
+        "title": "Server",
+        "type": "page"
+      }
+    }
+  },
+  "advanced": {
+    "title": "Nâng cao",
+    "type": "page"
+  }
+}
