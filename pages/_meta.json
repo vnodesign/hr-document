@@ -1,61 +1,61 @@
 {
-  "fe": {
+  "front-end": {
     "title": "Front End",
     "type": "menu",
     "items": {
       "index": {
         "title": "Front End là gì",
-        "href": "/fe"
+        "href": "/front-end"
       },
       "reactjs": {
         "title": "ReactJS",
-        "href": "/fe/reactjs"
+        "href": "/front-end/reactjs"
       },
       "vuejs": {
         "title": "VueJS",
-        "href": "/fe/vuejs"
+        "href": "/front-end/vuejs"
       },
       "svelte": {
         "title": "Svelte",
-        "href": "/fe/svelte"
+        "href": "/front-end/svelte"
       },
       "nuxtjs": {
         "title": "NuxtJS",
-        "href": "/fe/nuxtjs"
+        "href": "/front-end/nuxtjs"
       },
       "angularjs": {
         "title": "AngularJS",
-        "href": "/fe/angularjs"
+        "href": "/front-end/angularjs"
       },
       "tong-ket-ve-front-end": {
         "title": "Tổng kết về Front End",
-        "href": "/fe/tong-ket-ve-front-end"
+        "href": "/front-end/tong-ket-ve-front-end"
       }
     }
   },
-  "be": {
+  "back-end": {
     "title": "Back End",
     "type": "menu",
     "items": {
       "index": {
         "title": "Back End là gì",
-        "href": "/be"
+        "href": "/back-end"
       },
       "java": {
         "title": "Ngôn ngữ lập trình Java",
-        "href": "/be/java"
+        "href": "/back-end/java"
       },
       "php": {
         "title": "Ngôn ngữ lập trình PHP",
-        "href": "/be/php"
+        "href": "/back-end/php"
       },
       "ruby": {
         "title": "Ngôn ngữ lập trình Ruby",
-        "href": "/be/ruby"
+        "href": "/back-end/ruby"
       },
       "sql": {
         "title": "Ngôn ngữ dành cho truy vấn SQL",
-        "href": "/be/sql"
+        "href": "/back-end/sql"
       },
       "javascript": {
         "title": "Ngôn ngữ lập trình JavaScript",
