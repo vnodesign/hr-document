@@ -1,108 +1,41 @@
 {
+  "index": {
+    "title": "Trang chủ",
+    "type": "page",
+    "theme": {
+      "layout": "raw",
+      "timestamp": false
+    }
+  },
   "front-end": {
     "title": "Front End",
-    "type": "menu",
-    "items": {
-      "index": {
-        "title": "Front End là gì",
-        "href": "/front-end"
-      },
-      "reactjs": {
-        "title": "ReactJS",
-        "href": "/front-end/reactjs"
-      },
-      "vuejs": {
-        "title": "VueJS",
-        "href": "/front-end/vuejs"
-      },
-      "svelte": {
-        "title": "Svelte",
-        "href": "/front-end/svelte"
-      },
-      "nuxtjs": {
-        "title": "NuxtJS",
-        "href": "/front-end/nuxtjs"
-      },
-      "angularjs": {
-        "title": "AngularJS",
-        "href": "/front-end/angularjs"
-      },
-      "tong-ket-ve-front-end": {
-        "title": "Tổng kết về Front End",
-        "href": "/front-end/tong-ket-ve-front-end"
-      }
-    }
+    "type": "page"
   },
   "back-end": {
     "title": "Back End",
-    "type": "menu",
-    "items": {
-      "index": {
-        "title": "Back End là gì",
-        "href": "/back-end"
-      },
-      "java": {
-        "title": "Ngôn ngữ lập trình Java",
-        "href": "/back-end/java"
-      },
-      "php": {
-        "title": "Ngôn ngữ lập trình PHP",
-        "href": "/back-end/php"
-      },
-      "ruby": {
-        "title": "Ngôn ngữ lập trình Ruby",
-        "href": "/back-end/ruby"
-      },
-      "sql": {
-        "title": "Ngôn ngữ dành cho truy vấn SQL",
-        "href": "/back-end/sql"
-      },
-      "javascript": {
-        "title": "Ngôn ngữ lập trình JavaScript",
-        "href": "/be/javascript"
-      }
-    }
+    "type": "page"
   },
   "linux": {
     "title": "Linux",
-    "type": "menu",
-    "items": {
-      "index": {
-        "title": "Hệ điều hành Linux là gì",
-        "href": "/linux"
-      },
-      "ubuntu": {
-        "title": "Hệ điều hành Ubuntu",
-        "href": "/linux/ubuntu"
-      },
-      "fedora": {
-        "title": "Hệ điều hành Fedora (Red Hat)",
-        "href": "/linux/fedora"
-      },
-      "linux-mint": {
-        "title": "Hệ điều hành Linux Mint",
-        "href": "/linux/linux-mint"
-      },
-      "kali-linux": {
-        "title": "Hệ điều hành Kali Linux",
-        "href": "/linux/kali-linux"
-      },
-      "centos": {
-        "title": "Hệ điều hành CentOS",
-        "href": "/linux/centos"
-      },
-      "android": {
-        "title": "Hệ điều hành Android",
-        "href": "/linux/android"
-      },
-      "server": {
-        "title": "Server",
-        "type": "page"
-      }
-    }
+    "type": "page"
   },
   "advanced": {
     "title": "Nâng cao",
     "type": "page"
+  },
+  "design": {
+    "title": "Design",
+    "type": "page"
+  },
+  "start": {
+    "display": "hidden",
+    "theme": {
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": false,
+      "toc": false,
+      "pagination": false,
+      "timestamp": false
+    }
   }
 }
