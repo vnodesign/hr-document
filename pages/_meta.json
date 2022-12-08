@@ -1,12 +1,4 @@
 {
-  "index": {
-    "title": "Trang chủ",
-    "type": "page",
-    "theme": {
-      "layout": "raw",
-      "timestamp": false
-    }
-  },
   "front-end": {
     "title": "Front End",
     "type": "page"
@@ -19,23 +11,12 @@
     "title": "Linux",
     "type": "page"
   },
-  "advanced": {
+  "nang-cao": {
     "title": "Nâng cao",
     "type": "page"
   },
   "design": {
     "title": "Design",
     "type": "page"
-  },
-  "start": {
-    "display": "hidden",
-    "theme": {
-      "breadcrumb": false,
-      "footer": true,
-      "sidebar": false,
-      "toc": false,
-      "pagination": false,
-      "timestamp": false
-    }
   }
 }
