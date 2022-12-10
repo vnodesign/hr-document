@@ -1,9 +1,15 @@
 {
   "index": "Front End là gì",
-  "reactjs": "ReactJS",
-  "vuejs": "VueJS",
-  "svelte": "Svelte",
-  "nuxtjs": "NuxtJS",
-  "angularjs": "AngularJS",
-  "tong-ket-ve-front-end": "Tổng kết về Front End"
+  "nuxtjs": "NuxtJS là gì",
+  "vuejs": "VueJS là gì",
+  "vuepress": "VuePress là gì",
+  "vitejs": "ViteJS là gì",
+  "vuex": "Vuex là gì",
+  "reactjs": "ReactJS là gì",
+  "typescript": "TypeScript là gì",
+  "angularjs": "AngularJS là gì",
+  "svelte": "Svelte là gì",
+  "nextjs": "NextJS là gì",
+  "gatsbyjs": "GatsbyJS là gì",
+  "preact": "Preact là gì"
 }
