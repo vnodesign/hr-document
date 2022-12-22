@@ -1,10 +1,10 @@
 {
-  "index": "Hệ điều hành Linux là gì",
-  "ubuntu": "Hệ điều hành Ubuntu",
-  "fedora": "Hệ điều hành Fedora (Red hat)",
-  "linux-mint": "Hệ điều hành Linux Mint",
-  "kali-linux": "Hệ điều hành Kali Linux",
-  "centos": "Hệ điều hành CentOS",
-  "android": "Hệ điều hành Android",
+  "index": "Linux là gì",
+  "ubuntu": "Ubuntu là gì",
+  "fedora": "Fedora (Red hat) là gì",
+  "linux-mint": "Linux Mint là gì",
+  "kali-linux": "Kali Linux là gì",
+  "centos": "CentOS là gì",
+  "android": "Android là gì",
   "server": "Server"
 }
