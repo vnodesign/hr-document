@@ -1,0 +1,13 @@
+{
+  "name": "hr-document",
+  "version": "1.0.0",
+  "repository": "https://github.com/vnodesign/hr-document.git",
+  "author": "Tuan Duc Design <nguoisoidangyeu@outlook.com.vn>",
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^2.8.1"
+  }
+}

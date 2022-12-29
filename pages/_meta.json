@@ -11,12 +11,12 @@
     "title": "Linux",
     "type": "page"
   },
-  "nang-cao": {
-    "title": "Nâng cao",
-    "type": "page"
-  },
   "design": {
     "title": "Design",
+    "type": "page"
+  },
+  "nang-cao": {
+    "title": "Nâng cao",
     "type": "page"
   }
 }
