@@ -1,22 +1,6 @@
 {
-  "front-end": {
-    "title": "Front End",
-    "type": "page"
-  },
-  "back-end": {
-    "title": "Back End",
-    "type": "page"
-  },
-  "linux": {
-    "title": "Linux",
-    "type": "page"
-  },
-  "design": {
-    "title": "Design",
-    "type": "page"
-  },
-  "nang-cao": {
-    "title": "Nâng cao",
+  "docs": {
+    "title": "Tài liệu",
     "type": "page"
   }
 }
