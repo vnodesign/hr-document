@@ -100,7 +100,14 @@ Xin lưu ý rằng nhiều câu hỏi trong danh sách này là kết thúc mở
   function foo(){ }();
 ```
 
-5.1. Cần thay đổi gì để làm nó trở thành một IIFE? 6. Sự khác nhau giữa một biến: chứa null, chứa undefined hoặc chưa được khai báo (undeclared) là gì? 7. Bạn sẽ kiểm tra các trạng thái này như thế nào? 8. Một closure là gì, và bạn sẽ sử dụng nó như thế nào / tại sao bạn sử dụng nó? 9. Một trường hợp sử dụng điển hình cho các anonymous functions? 10. Bạn tổ chức code của bạn như thế nào? (module pattern, classical inheritance?) 11. Sự khác nhau giữa host objects và native objects là gì? 12. Nêu sự khác nhau giữa:
+6. Cần thay đổi gì để làm nó trở thành một IIFE?
+7. Sự khác nhau giữa một biến: chứa null, chứa undefined hoặc chưa được khai báo (undeclared) là gì?
+8. Bạn sẽ kiểm tra các trạng thái này như thế nào?
+9. Một closure là gì, và bạn sẽ sử dụng nó như thế nào / tại sao bạn sử dụng nó?
+10. Một trường hợp sử dụng điển hình cho các anonymous functions?
+11. Bạn tổ chức code của bạn như thế nào? (module pattern, classical inheritance?)
+12. Sự khác nhau giữa host objects và native objects là gì?
+13. Nêu sự khác nhau giữa:
 
 ```js
   function Person(){},
@@ -113,48 +120,48 @@ và
 var person = new Person();
 ```
 
-13. Sự khác nhau giữa .call và .apply là gì?
-14. Giải thích về Function.prototype.bind.
-15. Bạn sẽ sử dụng `document.write()` khi nào?
-16. Sự khác nhau giữa feature detection, feature inference, và việc sử dụng UA string là gì?
-17. Giải thích về Ajax bằng nhiều thông tin chi tiết nhất có thể.
-18. Những ưu và khuyết điểm của việc sử dụng Ajax là gì?
-19. Giải thích cách JSONP làm việc (và nó thật sự không phải là Ajax như thế nào).
-20. Bạn đã bao giờ sử dụng JavaScript templating chưa?
-21. Nếu có, bạn đã sử dụng những thư viện nào?
-22. Giải thích về hoisting.
-23. Trình bày về event bubbling.
-24. Trình bày sự khác nhau giữ một attribute và một property?
-25. Tại sao việc mở rộng các object được xây dựng sẵn trong JavaScript không phải là một ý tưởng tốt?
-26. Sự khác nhau giữa event load và event DOMContentLoaded của document?
-27. Sự khác nhau giữa == và === là gì?
-28. Giải thích về same-origin policy và sự liên quan của nó với JavaScript.
-29. Làm cho hàm này hoạt động:
+14. Sự khác nhau giữa .call và .apply là gì?
+15. Giải thích về Function.prototype.bind.
+16. Bạn sẽ sử dụng `document.write()` khi nào?
+17. Sự khác nhau giữa feature detection, feature inference, và việc sử dụng UA string là gì?
+18. Giải thích về Ajax bằng nhiều thông tin chi tiết nhất có thể.
+19. Những ưu và khuyết điểm của việc sử dụng Ajax là gì?
+20. Giải thích cách JSONP làm việc (và nó thật sự không phải là Ajax như thế nào).
+21. Bạn đã bao giờ sử dụng JavaScript templating chưa?
+22. Nếu có, bạn đã sử dụng những thư viện nào?
+23. Giải thích về hoisting.
+24. Trình bày về event bubbling.
+25. Trình bày sự khác nhau giữ một attribute và một property?
+26. Tại sao việc mở rộng các object được xây dựng sẵn trong JavaScript không phải là một ý tưởng tốt?
+27. Sự khác nhau giữa event load và event DOMContentLoaded của document?
+28. Sự khác nhau giữa == và === là gì?
+29. Giải thích về same-origin policy và sự liên quan của nó với JavaScript.
+30. Làm cho hàm này hoạt động:
 
 ```js
 duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
 
-30. Tại sao lại gọi là Ternary expression, từ Ternary có nghĩa gì?
-31. `"use strict";` là gì? Những điểm lợi và hại khi sử dụng nó?
-32. Tạo một vòng lặp for cho output từ 1 đến 100, trong đó output fizz thay cho số chia hết cho 3, buzz thay cho số chia hết cho 5 và fizzbuzz thay cho số chia hết cho cả 3 và 5.
-33. Tại sao, nói chung, việc không làm ảnh hưởng đến global scope của một website là một điều tốt?
-34. Tại sao bạn sẽ không sử dụng những thứ như event load? Event này có điểm bất lợi nào không? Bạn có biết cách thay thế nào khác, và tại sao bạn sẽ sử dụng chúng?
-35. Giải thích một ứng dụng đơn trang (single page app) là gì và làm sao để làm chúng thân thiện với việc SEO.
-36. Mức độ trải nghiệm của bạn là như thế nào đối với các Promise và/hoặc polyfills của chúng?
-37. Những điểm lợi và hại của việc sử dụng các Promise thay cho các callback?
-38. Nêu một vài ưu và khuyết điểm của việc viết code JavaScript trong một ngôn ngữ mà sẽ dùng để biên dịch thành JavaScript.
-39. Bạn sử dụng những công cụ và kỹ thuật nào để gỡ lỗi (debug) cho JavaScript?
-40. Bạn sử dụng những cấu trúc nào để lặp xuyên suốt qua tất cả các thuộc tính (property) trong object và các item trong array?
-41. Giải thích sự khác nhau giữa các mutable object và immutable object.
-42. Nêu ví dụ cho một immutable object trong JavaScript?
-43. Những ưu/khuyết điểm của tính bất biến (immutability)?
-44. Làm thế nào để đạt được tính bất biến trong code của bạn?
-45. Giải thích sự khác nhau giữa các hàm đồng bộ (synchronous function) và hàm không đồng bộ (asynchronous function).
-46. Event loop là gì?
-47. Sự khác biệt giữa call stack và task queue là gì?
-48. Giải thích sự khác nhau trong các cách sử dụng foo sau đây: giữa `function foo() {}` và `var foo = function() {}`
-49. Sự khác biệt giữa các biến được tạo bằng việc sử dụng let, var hoặc const là gì?
+31. Tại sao lại gọi là Ternary expression, từ Ternary có nghĩa gì?
+32. `"use strict";` là gì? Những điểm lợi và hại khi sử dụng nó?
+33. Tạo một vòng lặp for cho output từ 1 đến 100, trong đó output fizz thay cho số chia hết cho 3, buzz thay cho số chia hết cho 5 và fizzbuzz thay cho số chia hết cho cả 3 và 5.
+34. Tại sao, nói chung, việc không làm ảnh hưởng đến global scope của một website là một điều tốt?
+35. Tại sao bạn sẽ không sử dụng những thứ như event load? Event này có điểm bất lợi nào không? Bạn có biết cách thay thế nào khác, và tại sao bạn sẽ sử dụng chúng?
+36. Giải thích một ứng dụng đơn trang (single page app) là gì và làm sao để làm chúng thân thiện với việc SEO.
+37. Mức độ trải nghiệm của bạn là như thế nào đối với các Promise và/hoặc polyfills của chúng?
+38. Những điểm lợi và hại của việc sử dụng các Promise thay cho các callback?
+39. Nêu một vài ưu và khuyết điểm của việc viết code JavaScript trong một ngôn ngữ mà sẽ dùng để biên dịch thành JavaScript.
+40. Bạn sử dụng những công cụ và kỹ thuật nào để gỡ lỗi (debug) cho JavaScript?
+41. Bạn sử dụng những cấu trúc nào để lặp xuyên suốt qua tất cả các thuộc tính (property) trong object và các item trong array?
+42. Giải thích sự khác nhau giữa các mutable object và immutable object.
+43. Nêu ví dụ cho một immutable object trong JavaScript?
+44. Những ưu/khuyết điểm của tính bất biến (immutability)?
+45. Làm thế nào để đạt được tính bất biến trong code của bạn?
+46. Giải thích sự khác nhau giữa các hàm đồng bộ (synchronous function) và hàm không đồng bộ (asynchronous function).
+47. Event loop là gì?
+48. Sự khác biệt giữa call stack và task queue là gì?
+49. Giải thích sự khác nhau trong các cách sử dụng foo sau đây: giữa `function foo() {}` và `var foo = function() {}`
+50. Sự khác biệt giữa các biến được tạo bằng việc sử dụng let, var hoặc const là gì?
 
 ## Các câu hỏi về Kiểm thử (Testing)
 
@@ -176,17 +183,12 @@ duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]
 3. Những điểm khác nhau giữa Long-Polling, Websockets và Server-Sent Events?
 4. Giải thích các request header và response header sau:
 
-   4.1. Sự khác nhau giữa Expires, Date, Age và If-Modified-…
-
-   4.2. Do Not Track
-
-   4.3. Cache-Control
-
-   4.4. Transfer-Encoding
-
-   4.5. ETag
-
-   4.6. X-Frame-Options
+- Sự khác nhau giữa Expires, Date, Age và If-Modified-…
+- Do Not Track
+- Cache-Control
+- Transfer-Encoding
+- ETag
+- X-Frame-Options
 
 5. Các HTTP methods là gì? Liệt kê tất cả HTTP methods mà bạn biết, và giải thích chúng.
 
