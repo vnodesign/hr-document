@@ -1,11 +1,11 @@
 ---
-title: "Những Câu Hỏi Phỏng Vấn Lập Trình Viên Front-end"
-image: /static/media/frontend-interview.png
+title: 'Những Câu Hỏi Phỏng Vấn Lập Trình Viên Front-end'
+image: /static/interview/frontend-interview.png
 ---
 
 # Những Câu Hỏi Phỏng Vấn Lập Trình Viên Front-end
 
-![Những Câu Hỏi Phỏng Vấn Lập Trình Viên Front-end](/static/media/frontend-interview.png)
+![Những Câu Hỏi Phỏng Vấn Lập Trình Viên Front-end](/static/interview/frontend-interview.png)
 
 Đây là một tập tin chứa một số câu hỏi phỏng vấn lập trình viên front-end, có thể được sử dụng để đánh giá các ứng viên tiềm năng. Tuy nhiên, không khuyến khích sử dụng tất cả các câu hỏi trong tập tin này cho cùng một ứng viên (vì điều này sẽ mất hàng giờ đồng hồ). Thay vào đó, hãy chọn một vài câu hỏi phù hợp để kiểm tra những kỹ năng mà bạn yêu cầu từ ứng viên đó. Với sự lựa chọn thích hợp, tập tin này có thể hữu ích trong quá trình tuyển dụng và đánh giá ứng viên.
 
@@ -97,7 +97,7 @@ Xin lưu ý rằng nhiều câu hỏi trong danh sách này là kết thúc mở
 5. Giải thích tại sao đoạn code sau không hoạt động như một IIFE:
 
 ```js
-  function foo(){ }();
+function foo(){ }();
 ```
 
 6. Cần thay đổi gì để làm nó trở thành một IIFE?
@@ -110,14 +110,14 @@ Xin lưu ý rằng nhiều câu hỏi trong danh sách này là kết thúc mở
 13. Nêu sự khác nhau giữa:
 
 ```js
-  function Person(){},
-  var person = Person(),
+function Person(){},
+var person = Person(),
 ```
 
 và
 
 ```js
-var person = new Person();
+var person = new Person()
 ```
 
 14. Sự khác nhau giữa .call và .apply là gì?
@@ -139,7 +139,7 @@ var person = new Person();
 30. Làm cho hàm này hoạt động:
 
 ```js
-duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]
+duplicate([1, 2, 3, 4, 5]) // [1,2,3,4,5,1,2,3,4,5]
 ```
 
 31. Tại sao lại gọi là Ternary expression, từ Ternary có nghĩa gì?
@@ -203,63 +203,63 @@ var for = 10 + '20';
 _Câu hỏi: Đoạn code dưới đây sẽ xuất ra cái gì?_
 
 ```js
-console.log(0.1 + 0.2 == 0.3);
+console.log(0.1 + 0.2 == 0.3)
 ```
 
 _Câu hỏi: Bạn sẽ làm thế nào để hàm này hoạt động?_
 
 ```js
-add(2, 5); // 7
-add(2)(5); // 7
+add(2, 5) // 7
+add(2)(5) // 7
 ```
 
 _Câu hỏi: Giá trị nào được trả về từ dòng lệnh sau?_
 
 ```js
-"i'm a lasagna hog".split("").reverse().join("");
+"i'm a lasagna hog".split('').reverse().join('')
 ```
 
 _Câu hỏi: Giá trị của window.foo là gì?_
 
 ```js
-window.foo || (window.foo = "bar");
+window.foo || (window.foo = 'bar')
 ```
 
 _Câu hỏi: Kết quả của 2 lệnh alert dưới đây là gì?_
 
 ```js
-var foo = "Hello";
-(function () {
-  var bar = " World";
-  alert(foo + bar);
-})();
-alert(foo + bar);
+var foo = 'Hello'
+;(function () {
+  var bar = ' World'
+  alert(foo + bar)
+})()
+alert(foo + bar)
 ```
 
 _Câu hỏi: Giá trị của foo.length là gì?_
 
 ```js
-var foo = [];
-foo.push(1);
-foo.push(2);
+var foo = []
+foo.push(1)
+foo.push(2)
 ```
 
 _Câu hỏi: Giá trị của foo.x là gì?_
 
 ```js
-var foo = { n: 1 };
-var bar = foo;
-foo.x = foo = { n: 2 };
+var foo = { n: 1 }
+var bar = foo
+foo.x = foo = { n: 2 }
 ```
 
 _Câu hỏi: Những dòng code sau in ra những gì?_
 
 ```js
-console.log("one");
+console.log('one')
 setTimeout(function () {
-  console.log("two");
-}, 0);
-console.log("three");
+  console.log('two')
+}, 0)
+console.log('three')
 ```
 
 ## Các câu hỏi vui
