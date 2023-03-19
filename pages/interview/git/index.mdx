@@ -15,6 +15,8 @@ Git là công cụ quản lý mã nguồn phổ biến nhất hiện nay. Cho d�
 
 Git đóng vai trò quan trọng trong tổ chức để triển khai các phương pháp DevOps. Nhìn vào sự phổ biến của Git trong DevOps, rõ ràng là sẽ có nhiều cơ hội việc làm trong tương lai gần. Theo một báo cáo từ Grand View Research, thị trường DevOps toàn cầu dự kiến sẽ đạt 12,85 tỷ đô la vào năm 2025, tăng trưởng với tỷ suất CAGR là 18,60%. Dưới đây là một số câu hỏi phỏng vấn Git hàng đầu sẽ giúp bạn vượt qua cuộc phỏng vấn.
 
+![Danh sách hơn 100 câu hỏi và câu trả lời phỏng vấn về Git](/static/interview/github-interview.png)
+
 ## Git là gì và tại sao nó được sử dụng?
 
 Git là một hệ thống quản lý mã nguồn phân tán miễn phí và mã nguồn mở. Nó được phát triển bởi Linus Torvalds vào năm 2005 cho dự án Linux kernel, và sau đó trở thành một trong những công cụ phổ biến nhất cho việc quản lý mã nguồn trong các dự án phần mềm.
@@ -31,15 +33,11 @@ Git là một hệ thống quản lý phiên bản được sử dụng để th
 
 Git hỗ trợ cả các lập trình viên và người dùng không có chuyên môn kỹ thuật bằng cách giữ bản ghi của các tập tin dự án của họ. Nó cho phép nhiều người dùng làm việc cùng nhau và xử lý các dự án lớn một cách hiệu quả.
 
-![Git là gì](/static/interview/git.png)
-
 ### 2. Bạn hiểu thế nào về thuật ngữ "Hệ thống quản lý phiên bản" (Version Control System)?
 
 Hệ thống quản lý phiên bản (VCS) ghi lại tất cả các thay đổi được thực hiện trên một tập tin hoặc một tập dữ liệu, vì vậy một phiên bản cụ thể có thể được gọi lại sau này nếu cần.
 
 Điều này giúp đảm bảo rằng tất cả các thành viên trong nhóm đang làm việc trên phiên bản mới nhất của tập tin.
-
-![Hệ thống quản lý phiên bản](/static/interview/server.jpg)
 
 ### 3. GitHub là gì?
 
@@ -87,4 +85,162 @@ Sử dụng GIT mang lại những lợi ích sau đây:
 
 Một kho lưu trữ Git là một kho chứa tất cả các tệp và thư mục cần thiết cho dự án của bạn, cùng với lịch sử các sửa đổi của chúng. Kho lưu trữ này được quản lý bởi Git và được lưu trữ trên máy tính cá nhân hoặc trên các dịch vụ đám mây như GitHub, GitLab hoặc Bitbucket. Nó cho phép các nhà phát triển làm việc trên các phiên bản khác nhau của cùng một dự án cùng một lúc và quản lý các thay đổi của mình một cách hiệu quả.
 
-![Kho lưu trữ Git là gì](/static/interview/dot-git-folder.jpg)
+### 9. Làm thế nào để khởi tạo một kho lưu trữ trên Git?
+
+Nếu bạn muốn khởi tạo một kho lưu trữ trống cho một thư mục trên Git, bạn cần nhập lệnh git init. Sau lệnh này, một thư mục ẩn .git sẽ xuất hiện.
+
+```bash filename="Terminal"
+git init
+Initialized empty Git repository in /Volumes/Workspace/github/hr-document/.git/
+```
+
+### 10. Tính khác biệt giữa Git và Subversion (SVN)?
+
+| Git                                                          | SVN                                                        |
+| ------------------------------------------------------------ | ---------------------------------------------------------- |
+| Git là một hệ thống quản lý phiên bản phân tán phi tập trung | SVN là một hệ thống quản lý phiên bản tập trung            |
+| Git lưu trữ nội dung dưới dạng siêu dữ liệu (metadata)       | SVN lưu trữ dữ liệu dưới dạng các tập tin                  |
+| Nhánh "master" chứa phiên bản ổn định mới nhất               | Trong SVN, thư mục "trunk" chứa phiên bản ổn định mới nhất |
+| Nội dung của Git được băm (hash) bằng thuật toán băm SHA-1   | SVN không hỗ trợ việc băm nội dung                         |
+
+### 11. Dưới đây là một số lệnh Git phổ biến với chức năng tương ứng
+
+1. git init: khởi tạo một kho lưu trữ mới.
+2. git add: thêm tập tin hoặc thư mục vào vùng chờ (staging area) để chuẩn bị commit.
+3. git commit: lưu trữ thay đổi vào kho lưu trữ với thông điệp commit.
+4. git status: hiển thị trạng thái của kho lưu trữ, bao gồm tập tin đã sửa đổi, đã thêm hoặc đã xóa.
+5. git branch: liệt kê các nhánh hiện có và tạo nhánh mới.
+6. git merge: kết hợp các nhánh khác vào nhánh hiện tại.
+7. git clone: sao chép một kho lưu trữ từ máy chủ Git.
+8. git push: đẩy các thay đổi từ kho lưu trữ cục bộ lên kho lưu trữ trên máy chủ.
+9. git pull: kéo các thay đổi từ kho lưu trữ trên máy chủ xuống kho lưu trữ cục bộ.
+
+### 12. Dưới đây là một số lợi ích khi sử dụng Git
+
+1. Phân tán: Git là một hệ thống phân tán, cho phép nhiều người cùng làm việc trên cùng một dự án, không cần phải liên tục kết nối với máy chủ.
+2. Tốc độ: Git rất nhanh chóng và hiệu quả, đặc biệt là trong việc xử lý các thay đổi, ghép nhánh và hợp nhất.
+3. Quản lý phiên bản: Git cho phép lưu trữ và quản lý các phiên bản khác nhau của dự án, giúp người dùng theo dõi lịch sử các thay đổi, dễ dàng quay lại phiên bản cũ và so sánh các phiên bản khác nhau.
+4. Linh hoạt: Git có thể làm việc với nhiều loại dự án và định dạng tập tin khác nhau, cho phép người dùng linh hoạt thay đổi công việc của họ.
+5. Tích hợp tốt: Git tích hợp tốt với các công cụ phát triển phổ biến như GitHub, GitLab và Bitbucket.
+6. Khả năng phục hồi: Git cho phép khôi phục dữ liệu trong trường hợp bị mất hoặc bị hỏng.
+7. Cộng tác dễ dàng: Git giúp dễ dàng cộng tác và đồng bộ hóa giữa các thành viên trong đội ngũ phát triển.
+
+### 13. Ngôn ngữ nào được sử dụng trong Git?
+
+Git chủ yếu được viết bằng ngôn ngữ lập trình C, với vài thành phần được viết bằng các ngôn ngữ lập trình khác như Perl, Shell, Tcl, Python và Ruby. Việc sử dụng C cho phép Git hoạt động hiệu quả, nhanh chóng và có thể di động trên một loạt các hệ thống.
+
+### 14. Cú pháp đúng để thêm message vào một commit là gì?
+
+```bash filename="Terminal"
+git commit -m "Updated content folder git"
+```
+
+### 15. Lệnh nào được sử dụng để tạo một kho lưu trữ Git trống?
+
+git init - Lệnh này giúp tạo một kho chứa trống khi làm việc trên một dự án.
+
+### 16. git pull origin master là gì?
+
+Lệnh git pull origin master sẽ tải về tất cả các thay đổi từ nhánh master lên origin và tích hợp chúng vào nhánh cục bộ.
+
+git pull = git fetch + git merge origin/master
+
+Sau khi đã qua các câu hỏi phỏng vấn Git cấp độ cơ bản, bây giờ chúng ta hãy xem xét các câu hỏi phỏng vấn Git trung cấp và câu trả lời.
+
+## Câu hỏi Phỏng vấn Git Trung cấp.
+
+### 17. Tác dụng của lệnh git push là gì?
+
+Lệnh Git push được sử dụng để đẩy nội dung trong kho lưu trữ cục bộ lên kho lưu trữ từ xa. Sau khi kho lưu trữ cục bộ đã được sửa đổi, thực hiện lệnh push để chia sẻ các thay đổi với các thành viên trong nhóm từ xa.
+
+### 18. Sự khác nhau giữa git fetch và git pull là gì?
+
+| Git Fetch                                                             | Git Pull                                                                         |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Lệnh Git fetch chỉ tải xuống dữ liệu mới từ kho lưu trữ từ xa         | Git pull cập nhật nhánh HEAD hiện tại với các thay đổi mới nhất từ máy chủ từ xa |
+| Nó không tích hợp bất kỳ dữ liệu mới nào vào các tệp làm việc của bạn | Tải xuống dữ liệu mới và tích hợp nó vào các tệp làm việc hiện tại               |
+| Command - git fetch origin                                            | Cố gắng hợp nhất các thay đổi từ xa với các thay đổi cục bộ của bạn              |
+| git fetch --all                                                       | Command - git pull origin master                                                 |
+
+### 19. GitHub, GitLab và Bitbucket là các ví dụ về chức năng kho lưu trữ git trên mạng (hosted git repository)?
+
+Tất cả ba dịch vụ này đều là các dịch vụ lưu trữ (hosting) cho kho lưu trữ Git.
+
+### 20. Bạn hiểu gì về xung đột hợp nhất (Git merge conflict)?
+
+Một xung đột hợp nhất (Git merge conflict) là một sự kiện xảy ra khi Git không thể giải quyết sự khác biệt trong mã giữa hai lần commit một cách tự động.
+
+Git có thể tự động hợp nhất các thay đổi chỉ khi các commit nằm trên các dòng hoặc nhánh khác nhau.
+
+### 21. Làm thế nào để giải quyết xung đột trong Git?
+
+Đây là các bước sẽ giúp bạn giải quyết xung đột trong Git:
+
+1. Xác định các tệp gây ra xung đột.
+2. Thực hiện các thay đổi mong muốn vào các tệp.
+3. Thêm các tệp bằng lệnh git add.
+4. Bước cuối cùng là commit các thay đổi trong tệp với sự trợ giúp của lệnh git commit.
+
+### 22. Chức năng của lệnh git ls-tree là gì?
+
+Lệnh `git ls-tree` được sử dụng để hiển thị thông tin về các đối tượng cây trong cơ sở dữ liệu Git, bao gồm thông tin về các thư mục, tệp tin và thư mục con bên trong cây. Nó truy cập trực tiếp vào Git Object Database và hiển thị thông tin về các đối tượng trong một định dạng dễ đọc cho người dùng. Các tùy chọn của lệnh `git ls-tree` cho phép người dùng tùy chỉnh định dạng hiển thị và hiển thị thông tin chi tiết về các đối tượng, ví dụ như thông tin về quyền truy cập và các giá trị hash của các đối tượng.
+
+### 23. Quy trình để hoàn tác một commit đã được đẩy và công khai trước đó là gì?
+
+Để hoàn tác một commit đã được đẩy lên và công khai trên remote repository, có hai phương pháp:
+
+1. Xóa hoặc sửa file lỗi trong commit bằng cách tạo một commit mới và đẩy nó lên remote repository. Sau đó commit nó lên remote repository bằng cách sử dụng lệnh:
+
+```bash filename="Terminal"
+git commit -m "message commit"
+```
+
+2. Tạo một commit mới để hoàn tác tất cả các thay đổi đã được thực hiện trong commit lỗi. Sử dụng lệnh sau:
+
+```bash filename="Terminal"
+git revert <ID commit>
+```
+
+### 24. Bare repository khác với cách khởi tạo một Git repository theo cách thông thường như thế nào?
+
+| Cách thông thường                                                              | Cách không có đầy đủ thông tin                                                                                       |
+| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| Bạn tạo một thư mục làm việc với lệnh git init                                 | Không chứa bất kỳ bản sao hoạt động hoặc đã được kiểm tra của các tệp nguồn                                          |
+| Một thư mục con .git được tạo ra với tất cả lịch sử thay đổi liên quan đến git | Các kho lưu trữ trống lưu trữ lịch sử sửa đổi git trong thư mục gốc của kho lưu trữ của bạn thay vì thư mục con .git |
+
+### 25. Git clone là gì?
+
+Git clone cho phép bạn tạo ra một bản sao trên máy tính của kho lưu trữ GitHub từ xa. Sau khi bạn đã clone một kho lưu trữ, bạn có thể chỉnh sửa trên máy tính của mình thay vì trực tiếp trên các tập tin nguồn của kho lưu trữ từ xa.
+
+### 26. Git stash là gì?
+
+Giả sử bạn là một nhà phát triển và bạn muốn chuyển sang một nhánh khác để làm việc vào một thứ gì đó khác. Vấn đề ở đây là bạn không muốn thực hiện các commit trong công việc chưa hoàn thành, vì vậy bạn chỉ muốn trở lại điểm này sau này. Giải pháp ở đây là Git stash.
+
+Git stash lưu các tệp được theo dõi đã sửa đổi của bạn và lưu trữ chúng trên một ngăn xếp các thay đổi chưa hoàn thành mà bạn có thể áp dụng lại bất cứ lúc nào. Để quay trở lại công việc của bạn, bạn có thể sử dụng lệnh stash pop.
+
+### 27. Git reset --mixed và git merge --abort là gì và tác dụng của chúng là gì?
+
+`git reset --mixed` được sử dụng để hoàn tác các thay đổi đã được thực hiện trong thư mục làm việc và khu vực đang chờ.
+
+`git merge --abort` giúp dừng quá trình hợp nhất và trở về trạng thái trước khi quá trình hợp nhất bắt đầu.
+
+### 28. Bạn hiểu gì về Staging area trong Git?
+
+Staging Area trong Git là khi nó bắt đầu theo dõi và lưu trữ các thay đổi xảy ra trong các tệp. Những thay đổi được lưu trong thư mục .git. Staging là một khu vực trung gian giúp định dạng và xem lại các commit trước khi hoàn thành chúng.
+
+### 29. Git Bisect là gì và bạn sử dụng nó như thế nào?
+
+Lệnh Git Bisect thực hiện tìm kiếm nhị phân để xác định commit nào làm phát sinh lỗi hoặc thay đổi tiến trình trong lịch sử dự án.
+
+Cú pháp: `git bisect <subcommand> <options>`
+
+### 30. Làm thế nào để tìm danh sách các tập tin đã được thay đổi trong một commit cụ thể?
+
+Lệnh để lấy danh sách các tập tin đã bị thay đổi trong một commit cụ thể là:
+
+```bash filename="Terminal"
+git diff-tree -r {commit hash}
+```
+
+- -r cho phép lệnh liệt kê các tập tin riêng lẻ
+- commit hash liệt kê tất cả các tập tin đã bị thay đổi hoặc thêm vào trong commit.
