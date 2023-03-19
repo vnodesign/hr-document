@@ -7,8 +7,8 @@ import { Callout } from '@components/Callout'
 
 # Danh sách hơn 100 câu hỏi và câu trả lời phỏng vấn về Git
 
-<Callout type="error">
-  Trang này hiện đang chỉ là một trang tóm tắt. Hãy giúp chúng tôi mở rộng nó bằng cách đóng góp!
+<Callout type="warning">
+  Danh sách hơn 100 câu hỏi và câu trả lời phỏng vấn về Git đang được xây dựng.
 </Callout>
 
 Git là công cụ quản lý mã nguồn phổ biến nhất hiện nay. Cho dù bạn là một lập trình viên hay một người không có chuyên môn kỹ thuật, Git sẽ giúp bạn với các tính năng hợp tác như theo dõi lỗi, quản lý nhiệm vụ và wikis.
@@ -244,3 +244,77 @@ git diff-tree -r {commit hash}
 
 - -r cho phép lệnh liệt kê các tập tin riêng lẻ
 - commit hash liệt kê tất cả các tập tin đã bị thay đổi hoặc thêm vào trong commit.
+
+### 31. Việc sử dụng lệnh git config là gì?
+
+Lệnh git config được sử dụng để thiết lập các giá trị cấu hình git trên cấp độ toàn cầu hoặc cục bộ. Nó thay đổi các tùy chọn cấu hình trong cài đặt Git của bạn. Thông thường, nó được sử dụng để thiết lập địa chỉ email Git, trình chỉnh sửa và bất kỳ bí danh nào mà bạn muốn sử dụng với lệnh git.
+
+### 32. Chức năng của lệnh git clean là gì?
+
+Lệnh git clean được sử dụng để loại bỏ các tệp chưa được theo dõi khỏi thư mục làm việc.
+
+### 33. SubGit là gì và tại sao nó được sử dụng?
+
+SubGit là một công cụ được sử dụng để chuyển đổi SVN sang Git. Nó chuyển đổi các kho lưu trữ SVN thành Git và cho phép bạn làm việc trên cả hai hệ thống đồng thời. Nó tự động đồng bộ SVN với Git.
+
+### 34. Nếu bạn khôi phục một nhánh đã bị xóa, công việc nào sẽ được khôi phục?
+
+Các tệp tin đã được giấu và lưu trữ trong chỉ mục giấu có thể được khôi phục. Các tệp tin không được theo dõi sẽ bị mất. Do đó, luôn luôn là một ý tưởng tốt để chuẩn bị và cam kết công việc của bạn hoặc giấu chúng.
+
+### 35. Bạn hiểu như nào về các lệnh git này?
+
+```bash filename="Terminal"
+git status
+```
+
+`git status` - Nó hiển thị trạng thái hiện tại của thư mục làm việc và khu vực staging.
+
+```bash filename="Terminal"
+git log
+```
+
+`git log` - Đây là một công cụ chính để xem xét và đọc lịch sử của mọi thứ đã xảy ra trong một kho lưu trữ.
+
+```bash filename="Terminal"
+git diff
+```
+
+`git diff` - Đây là một lệnh đa năng của Git thực hiện chức năng so sánh giữa các nguồn dữ liệu Git khi được thực thi.
+
+```bash filename="Terminal"
+git revert <commit>
+```
+
+`git reset <file>` - Nó được sử dụng để hủy tín hiệu của một tệp tin trong khu vực staging.
+
+`git revert <commit>` - Nó được sử dụng để hoàn tác các thay đổi trong lịch sử commit của kho lưu trữ.
+
+```bash filename="Terminal"
+git reset <file>
+```
+
+### 36. Đánh dấu (tagging) trong Git là gì?
+
+Việc đánh dấu (tagging) cho phép các nhà phát triển đánh dấu tất cả các điểm kiểm soát quan trọng khi dự án của họ tiến triển.
+
+### 37. Chính xác thì forking trong Git là gì?
+
+Đó là bản sao của kho lưu trữ và việc forking cho phép người dùng thử nghiệm các thay đổi mà không cần quan tâm đến dự án gốc.
+
+### 38. Làm thế nào để thay đổi bất kỳ messages commit cũ?
+
+Bạn có thể thay đổi messages commit mới nhất bằng lệnh `git commit --amend`.
+
+### 39. Cách xử lý các tập tin nhị phân lớn trong Git?
+
+Git LFS là một tiện ích mở rộng của Git được sử dụng để làm việc với các tập tin nhị phân lớn trong một kho lưu trữ Git riêng biệt.
+
+### 40. Một số công cụ trong GIT là gì?
+
+Dưới đây là một số công cụ trong Git:
+
+1. GitKraken: một giao diện đồ họa để quản lý và kiểm soát Git repositories.
+2. SourceTree: một ứng dụng desktop để trực quan hóa và quản lý Git repositories.
+3. GitLab: một nền tảng Git quản lý mã nguồn mở và doanh nghiệp.
+4. Bitbucket: một dịch vụ quản lý repository Git của Atlassian.
+5. GitHub Desktop: một giao diện đồ họa để quản lý Git repositories.
