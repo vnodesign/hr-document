@@ -214,9 +214,9 @@ Git clone cho phép bạn tạo ra một bản sao trên máy tính của kho l�
 
 ### 26. Git stash là gì?
 
-Giả sử bạn là một nhà phát triển và bạn muốn chuyển sang một nhánh khác để làm việc vào một thứ gì đó khác. Vấn đề ở đây là bạn không muốn thực hiện các commit trong công việc chưa hoàn thành, vì vậy bạn chỉ muốn trở lại điểm này sau này. Giải pháp ở đây là Git stash.
+Giả sử bạn là một nhà phát triển và bạn muốn chuyển sang một nhánh khác để làm việc vào một thứ gì đó khác. Vấn đề ở đây là bạn không muốn thực hiện các commit trong công việc chưa hoàn thành, vì vậy bạn chỉ muốn trở lại điểm này sau này. Giải pháp ở đây là `git stash`.
 
-Git stash lưu các tệp được theo dõi đã sửa đổi của bạn và lưu trữ chúng trên một ngăn xếp các thay đổi chưa hoàn thành mà bạn có thể áp dụng lại bất cứ lúc nào. Để quay trở lại công việc của bạn, bạn có thể sử dụng lệnh stash pop.
+`git stash` lưu các tệp được theo dõi đã sửa đổi của bạn và lưu trữ chúng trên một ngăn xếp các thay đổi chưa hoàn thành mà bạn có thể áp dụng lại bất cứ lúc nào. Để quay trở lại công việc của bạn, bạn có thể sử dụng lệnh stash pop.
 
 ### 27. Git reset --mixed và git merge --abort là gì và tác dụng của chúng là gì?
 
@@ -230,7 +230,7 @@ Staging Area trong Git là khi nó bắt đầu theo dõi và lưu trữ các th
 
 ### 29. Git Bisect là gì và bạn sử dụng nó như thế nào?
 
-Lệnh Git Bisect thực hiện tìm kiếm nhị phân để xác định commit nào làm phát sinh lỗi hoặc thay đổi tiến trình trong lịch sử dự án.
+Lệnh `git bisect` thực hiện tìm kiếm nhị phân để xác định commit nào làm phát sinh lỗi hoặc thay đổi tiến trình trong lịch sử dự án.
 
 Cú pháp: `git bisect <subcommand> <options>`
 
@@ -247,7 +247,7 @@ git diff-tree -r {commit hash}
 
 ### 31. Việc sử dụng lệnh git config là gì?
 
-Lệnh git config được sử dụng để thiết lập các giá trị cấu hình git trên cấp độ toàn cầu hoặc cục bộ. Nó thay đổi các tùy chọn cấu hình trong cài đặt Git của bạn. Thông thường, nó được sử dụng để thiết lập địa chỉ email Git, trình chỉnh sửa và bất kỳ bí danh nào mà bạn muốn sử dụng với lệnh git.
+Lệnh `git config` được sử dụng để thiết lập các giá trị cấu hình git trên cấp độ toàn cầu hoặc cục bộ. Nó thay đổi các tùy chọn cấu hình trong cài đặt Git của bạn. Thông thường, nó được sử dụng để thiết lập địa chỉ email Git, trình chỉnh sửa và bất kỳ bí danh nào mà bạn muốn sử dụng với lệnh git.
 
 ### 32. Chức năng của lệnh git clean là gì?
 
@@ -285,7 +285,6 @@ git diff
 git revert <commit>
 ```
 
-
 `git revert <commit>` - Nó được sử dụng để hoàn tác các thay đổi trong lịch sử commit của kho lưu trữ.
 
 ```bash filename="Terminal"
@@ -319,3 +318,47 @@ Dưới đây là một số công cụ trong Git:
 3. GitLab: một nền tảng Git quản lý mã nguồn mở và doanh nghiệp.
 4. Bitbucket: một dịch vụ quản lý repository Git của Atlassian.
 5. GitHub Desktop: một giao diện đồ họa để quản lý Git repositories.
+
+### 41. Bạn sẽ tạo một commit mới hay sửa đổi một commit đã tồn tại?
+
+Lệnh `git commit --amend` cho phép bạn dễ dàng chỉnh sửa commit gần nhất.
+
+### 42. Chiến lược nhánh là gì?
+
+Nó được sử dụng bởi một nhóm phát triển phần mềm trong quá trình viết và quản lý mã nguồn bằng hệ thống điều khiển phiên bản.
+
+### 43. Sự khác biệt giữa head, working tree và index
+
+Chúng là các tên gọi cho các nhánh khác nhau. Mặc dù một kho lưu trữ Git có thể theo dõi bất kỳ số lượng nhánh nào, nhưng working tree chỉ được liên kết với một trong số chúng và HEAD trỏ đến nhánh đó.
+
+### 44. Có sẵn một ứng dụng giao diện đồ họa Git cho Linux không?
+
+Git bao gồm các công cụ GUI tích hợp sẵn để thực hiện các thao tác commit (git-gui) và duyệt (gitk), nhưng có nhiều công cụ bên thứ ba khác nhau có sẵn cho người dùng muốn có trải nghiệm cụ thể cho từng nền tảng.
+
+### 45. Lợi ích của hệ thống quản lý phiên bản là gì?
+
+Hệ thống quản lý phiên bản giúp cho các nhóm phát triển phần mềm duy trì được hiệu quả và sự linh hoạt trong quá trình phát triển khi đội ngũ phát triển mở rộng bằng cách thêm nhiều nhà phát triển hơn.
+
+### 46. Git instaweb có ý nghĩa gì?
+
+Đó là một tập lệnh được sử dụng để thiết lập một phiên bản tạm thời của Gitweb.
+
+### 47. Workflow của forking là gì?
+
+Forking là một hoạt động sao chép của git được thực hiện trên bản sao lưu trữ của dự án trên máy chủ.
+
+### 48. Đề cập đến lợi ích của quy trình làm việc forking
+
+Các đóng góp có thể được tích hợp mà không cần mọi người cố gắng đẩy vào một kho lưu trữ trung tâm duy nhất.
+
+### 49. Gitflow workflow là gì?
+
+The Gitflow Workflow xác định một mô hình phân nhánh nghiêm ngặt tập trung vào việc phát hành dự án.
+
+### 50. Đối tượng commit trong Git chứa những thông tin gì?
+
+Đối tượng commit chứa một cây đối tượng blob và các đối tượng cây khác đại diện cho cấu trúc thư mục của phiên bản dự án.
+
+### 51. Viết cú pháp rebasing trong Git
+
+Cú pháp như sau: `$git rebase <tên nhánh>`
