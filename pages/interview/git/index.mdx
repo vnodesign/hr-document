@@ -362,3 +362,47 @@ The Gitflow Workflow xác định một mô hình phân nhánh nghiêm ngặt t�
 ### 51. Viết cú pháp rebasing trong Git
 
 Cú pháp như sau: `$git rebase <tên nhánh>`
+
+### 52. Git Hooks là gì?
+
+Nó là các tập lệnh được thực thi tự động mỗi khi một sự kiện cụ thể xảy ra trong một kho Git.
+
+### 53. Git stash và Git stash pop là gì?
+
+`git stash pop` xóa bỏ stash (stash trên cùng, mặc định) khi được áp dụng, trong khi `git stash apply` giữ nó trong danh sách stash để sử dụng trong tương lai.
+
+### 54. Giải thích về git reflog là gì?
+
+`git reflog` là một lệnh trong Git được sử dụng để xem lại lịch sử của các thao tác thay đổi trên các tham chiếu (references) trong Git repository, bao gồm cả các commit, pull, push, rebase và stash.
+
+Khi sử dụng `git reflog`, Git sẽ hiển thị danh sách các tham chiếu đã được thay đổi trên một dòng thời gian và cung cấp cho người dùng thông tin về mỗi thao tác thay đổi đó, bao gồm tên commit, thời gian, messages commit và tên nhánh. Người dùng có thể sử dụng `git reflog` để xem lại lịch sử các thao tác trên các tham chiếu và phục hồi lại các thay đổi bị mất hoặc không mong muốn trên các nhánh hoặc commit trước đó.
+
+Nói cách khác, `git reflog` là một công cụ mạnh mẽ giúp người dùng quản lý và khôi phục lại các thay đổi trên các tham chiếu trong Git repository, đặc biệt là trong trường hợp xảy ra sự cố hoặc lỗi trong quá trình làm việc với Git.
+
+### 55. Vai trò của lệnh git annotate là gì?
+
+Trong Git, `git annotate` được sử dụng để theo dõi từng dòng của tệp dựa trên thông tin commit.
+
+### 56. Git Directory là gì?
+
+Git Directory là nơi lưu trữ các siêu dữ liệu (metadata) và cơ sở dữ liệu đối tượng (object database) của dự án.
+
+### 57. Làm thế nào để giải quyết xung đột (conflict) trong Git?
+
+Chỉnh sửa các tệp để giải quyết các thay đổi không tương thích trước, sau đó sử dụng `git add` để thêm các tệp được sửa chữa và `git commit` để lưu các thay đổi đã được sửa chữa sau khi merge.
+
+### 58. Phương pháp chuẩn để tạo nhánh trong GIT là gì?
+
+Trong GIT, cách tốt nhất để tạo một nhánh là có một nhánh 'chính' (main) và sau đó tạo một nhánh khác để thực hiện các thay đổi mà chúng ta muốn thực hiện.
+
+### 59. Cách thiết lập một kho (repository) Git là gì?
+
+Nếu bạn muốn thêm một kho lưu trữ trống vào một thư mục trong Git, hãy sử dụng lệnh `git init`
+
+### 60. Cú pháp đúng để thêm messages vào một commit là gì?
+
+`git commit -m "Update content interview git"` là cú pháp để thêm messages vào một commit.
+
+### 61. Sử dụng git instaweb như thế nào?
+
+`git instaweb` được sử dụng để tự động khởi chạy một trình duyệt web và máy chủ web với giao diện vào một kho lưu trữ địa phương.
