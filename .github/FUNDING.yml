@@ -1,8 +1,4 @@
 # These are supported funding model platforms
 
 github: [tuanducdesign]
-custom:
-  [
-    "https://www.facebook.com/vnodesign",
-    "https://www.facebook.com/tuanducdesign",
-  ]
+custom: ['https://www.facebook.com/vnodesign', 'https://www.facebook.com/tuanducdesign']

@@ -147,7 +147,7 @@ git pull = git fetch + git merge origin/master
 
 Sau khi đã qua các câu hỏi phỏng vấn Git cấp độ cơ bản, bây giờ chúng ta hãy xem xét các câu hỏi phỏng vấn Git trung cấp và câu trả lời.
 
-## Câu hỏi Phỏng vấn Git Trung cấp.
+## Thử sức với những câu hỏi phỏng vấn Git trung cấp
 
 ### 17. Tác dụng của lệnh git push là gì?
 
@@ -406,3 +406,144 @@ Nếu bạn muốn thêm một kho lưu trữ trống vào một thư mục tron
 ### 61. Sử dụng git instaweb như thế nào?
 
 `git instaweb` được sử dụng để tự động khởi chạy một trình duyệt web và máy chủ web với giao diện vào một kho lưu trữ địa phương.
+
+### 62. Bạn hãy giải thích về is-tree trong git?
+
+Đó là một đối tượng cây biểu diễn với chứa chế độ và tên của mỗi mục.
+
+### 63. Git cherry-pick là gì?
+
+Git cherry-pick là một lệnh thường được sử dụng để chuyển các commit cụ thể từ một nhánh của kho lưu trữ sang nhánh khác.
+
+### 64. Điểm khác nhau giữa "git remote" và "git clone" là gì?
+
+"Git remote" cho phép bạn tạo một mục nhập trong cấu hình git chỉ định một URL.
+
+"Git clone" cho phép bạn tạo một kho lưu trữ git mới bằng cách sao chép nó từ URL hiện tại.
+
+### 65. Sự khác biệt giữa "pull request" và "branch" là gì?
+
+"Pull request" được thực hiện khi bạn muốn thay đổi sửa đổi của nhà phát triển đối với một nhánh mã nguồn khác. Và "Branch" chỉ là một phiên bản mã nguồn riêng biệt.
+
+### 66. Làm cách nào bạn có thể khôi phục một nhánh trước đây đã đẩy các thay đổi trong kho lưu trữ chính nhưng lại vô tình bị xóa khỏi máy cục bộ của mỗi thành viên trong nhóm?
+
+Chúng ta có thể dễ dàng khôi phục bằng cách xem commit mới nhất của nhánh đó trong reflog, sau đó tiến hành tạo một nhánh mới.
+
+### 67. Detached head là gì?
+
+"Detach head" đề cập đến việc hiện tại kho lưu trữ được kiểm tra không nằm trong nhánh cục bộ.
+
+### 68. Lệnh nào giúp chúng ta biết các nhánh đã được merge vào master và các nhánh chưa được merge?
+
+Lệnh `git branch --merged` giúp chúng ta lấy danh sách các nhánh đã được merged vào nhánh hiện tại.
+
+Lệnh `git branch --no-merged` hiển thị danh sách các nhánh chưa được merged.
+
+### 69. Git có hỗ trợ xác thực LDAP không?
+
+GitLab API chỉ hỗ trợ xác thực LDAP từ phiên bản 6.0 trở lên.
+
+## Những câu hỏi phổ biến về Git trong phỏng vấn
+
+### 70. Một định nghĩa đơn giản về Git
+
+Git là một hệ thống quản lý phiên bản phân tán miễn phí và mã nguồn mở, được thiết kế để xử lý mọi thứ từ dự án nhỏ đến rất lớn với tốc độ và hiệu quả cao.
+
+### 71. C++ có được sử dụng trong Git không?
+
+Có, tuy nhiên ngôn ngữ lập trình C là một trong những ngôn ngữ phổ biến được sử dụng trong Git.
+
+### 72. Làm thế nào Git hoạt động?
+
+Git hoạt động bằng cách theo dõi các thay đổi trên các tập tin trong dự án và cho phép các nhà phát triển dễ dàng phục hồi các phiên bản trước đó nếu cần thiết. Git cũng làm cho việc cộng tác trên các dự án trở nên dễ dàng, bởi vì nó cho phép nhiều nhà phát triển làm việc trên cùng một mã nguồn đồng thời.
+
+Git hoạt động bằng cách theo dõi các thay đổi trên các tệp trong kho chứa. Khi một tệp bị thay đổi, Git tính toán một định danh duy nhất cho thay đổi đó, được gọi là "commit hash". Commit hash cho phép Git xác định thay đổi đó và theo dõi nó qua thời gian.
+
+### 73. Các lệnh Git phổ biến nhất là gì?
+
+Một số lệnh Git phổ biến bao gồm:
+
+1. git init: Khởi tạo một kho lưu trữ Git mới trong thư mục hiện tại hoặc trong một thư mục được chỉ định.
+2. git clone: Sao chép một kho lưu trữ Git đã tồn tại từ máy chủ Git hoặc một kho lưu trữ khác.
+3. git add: Thêm các thay đổi vào vùng đệm (staging area) để chuẩn bị cho việc commit.
+4. git commit: Lưu các thay đổi đã được thêm vào vùng đệm (staging area) vào kho lưu trữ Git.
+5. git push: Đẩy các thay đổi đã commit lên máy chủ Git hoặc một kho lưu trữ khác.
+6. git pull: Lấy các thay đổi mới nhất từ máy chủ Git hoặc một kho lưu trữ khác và cập nhật kho lưu trữ Git của bạn.
+7. git branch: Tạo, xóa hoặc liệt kê các nhánh (branches) của kho lưu trữ Git.
+8. git checkout: Chuyển đổi giữa các nhánh hoặc khôi phục các tập tin từ các phiên bản trước của chúng.
+9. git merge: Kết hợp các nhánh khác nhau của kho lưu trữ Git.
+10. git log: Hiển thị lịch sử commit của kho lưu trữ Git.
+11. git status: Hiển thị trạng thái của các tập tin trong kho lưu trữ Git.
+12. git diff: Hiển thị sự khác biệt giữa các phiên bản của các tập tin trong kho lưu trữ Git.
+
+### 74. Danh sách các chức năng được cung cấp bởi dịch vụ lưu trữ kho Git
+
+Có rất nhiều chức năng mà một dịch vụ lưu trữ Git có thể cung cấp. Một số chức năng phổ biến và hữu ích nhất bao gồm:
+
+- Cung cấp giao diện web cho người dùng tương tác với các kho lưu trữ
+- Cho phép người dùng sao chép kho lưu trữ
+- Cho phép người dùng xem và tải xuống thống kê về kho lưu trữ
+- Cung cấp cách cho người dùng đẩy các thay đổi vào kho lưu trữ
+- Theo dõi các thay đổi được thực hiện trên các kho lưu trữ.
+
+### 75. Sự khác biệt giữa Git và các hệ thống quản lý phiên bản khác là gì?
+
+- Git là một hệ thống quản lý phiên bản phân tán, có nghĩa là nó có thể được sử dụng mà không cần một máy chủ trung tâm. Điều này cho phép linh hoạt trong cách quản lý các dự án.
+- Mặt khác, các hệ thống quản lý phiên bản thường được tập trung, điều này có thể giới hạn tính linh hoạt trong cách quản lý các dự án.
+
+### 76. Làm thế nào để cài đặt Git?
+
+Cài đặt Git rất dễ dàng. Bạn chỉ cần tải về phiên bản mới nhất từ trang web của Git [https://git-scm.com/](https://git-scm.com/).
+
+### 77. Làm thế nào để sử dụng Git?
+
+Để sử dụng Git, một nhà phát triển đầu tiên tạo một kho lưu trữ địa phương trên máy tính của họ. Kho lưu trữ này chứa tất cả các tệp cho một dự án và lịch sử của tất cả các thay đổi được thực hiện trên các tệp đó.
+
+Hoặc chỉ cần làm theo hướng dẫn trong tài liệu Git [https://git-scm.com/doc](https://git-scm.com/doc).
+
+### 78. Những hạn chế của Git là gì?
+
+- Một trong những hạn chế chính là việc học và sử dụng Git có thể khó khăn, đặc biệt là đối với những người không quen thuộc với hệ thống quản lý phiên bản.
+- Và Git không luôn đáng tin cậy và đôi khi có thể chạy chậm.
+
+### 79. Những lệnh quan trọng nhất trong Git là gì?
+
+Những lệnh quan trọng nhất trong Git bao gồm "commit", "push" và "pull".
+
+- Lệnh "commit" được sử dụng để lưu các thay đổi vào kho lưu trữ địa phương.
+- Và lệnh "push" được sử dụng để gửi các thay đổi đến kho lưu trữ từ xa.
+- Sau đó, lệnh "pull" được sử dụng để lấy các thay đổi từ kho lưu trữ từ xa về.
+
+### 80. Những tính năng quan trọng nhất của Git là gì?
+
+Một số tính năng quan trọng của Git là tính phân tán, khả năng theo dõi các thay đổi và hỗ trợ cho các nhánh.
+
+- Tính phân tán của Git cho phép các nhà phát triển làm việc độc lập và ngoại tuyến.
+- Khả năng theo dõi các thay đổi giúp các nhà phát triển theo dõi công việc của họ và phục hồi lại phiên bản trước nếu cần thiết.
+- Hỗ trợ cho các nhánh cho phép các nhà phát triển thử nghiệm các tính năng mới mà không ảnh hưởng đến mã nguồn chính.
+
+### 81. Nhánh trong Git là gì?
+
+Nhánh là một cách để cô lập công việc phát triển trên một khía cạnh cụ thể của dự án. Khi một nhánh được tạo, nó phân nhánh ra khỏi nhánh chính. Điều này cho phép các nhà phát triển làm việc trên một tính năng mới hoặc sửa lỗi mà không ảnh hưởng đến mã nguồn chính của dự án.
+
+### 82. Commit trong Git là gì?
+
+Commit là cách để lưu lại các thay đổi trên một nhánh. Khi commit được tạo, một bản chụp của trạng thái hiện tại của nhánh sẽ được tạo ra. Bản chụp này có thể được sử dụng để khôi phục lại trạng thái của nhánh đó nếu cần thiết.
+
+### 83. Conflict trong Git là gì?
+
+Conflict trong Git xảy ra khi hai hoặc nhiều nhà phát triển đã thay đổi cùng một phần của một tệp và những thay đổi đó không thể tự động hợp nhất được. Khi điều này xảy ra, Git sẽ đánh dấu tệp đó là conflict và để cho các nhà phát triển giải quyết conflict.
+
+Giải quyết conflict có thể được thực hiện bằng cách sửa đổi tệp một cách thủ công để lựa chọn những thay đổi nào nên được giữ lại, hoặc bằng cách sử dụng một công cụ như lệnh merge của Git để tự động hợp nhất những thay đổi đó.
+
+### 84. Tác dụng của lệnh git status là gì?
+
+Lệnh git status được sử dụng để xem trạng thái hiện tại của kho lưu trữ Git. Lệnh này giúp xác định xem kho lưu trữ đã được làm sạch hoặc còn dơ bẩn và xem các tệp nào đã bị sửa đổi. Ngoài ra, lệnh git status cũng cho thấy nhánh đang được kiểm tra và xem có bất kỳ thay đổi chưa được lưu hay không.
+
+### 85. Tại sao Git được coi là dễ sử dụng để làm việc?
+
+Có nhiều lý do mà Git được coi là một công cụ dễ sử dụng.
+
+- Nó có độ cong học tập đơn giản. Ngay cả những người mới học lập trình cũng có thể dễ dàng học cách sử dụng Git chỉ sau vài giờ thực hành.
+- Git rất linh hoạt và có thể dễ dàng tùy chỉnh để phù hợp với nhu cầu của bất kỳ dự án nào.
+- Và, Git rất ổn định và đáng tin cậy, do đó người dùng có thể tin tưởng rằng công việc của họ sẽ được bảo đảm an toàn.

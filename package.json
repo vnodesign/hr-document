@@ -5,9 +5,17 @@
   "author": "Tuan Duc Design <nguoisoidangyeu@outlook.com.vn>",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
     "prettier": "prettier --write ."
   },
+  "lint-staged": {
+    "*.+(json|md|mdx)": [
+      "pnpm prettier"
+    ]
+  },
   "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
     "prettier": "^2.8.4"
   }
 }
