@@ -5,10 +5,6 @@ image: /static/interview/github-interview.png
 
 # Danh sách hơn 100 câu hỏi và câu trả lời phỏng vấn về Git
 
-<Callout type="warning">
-  Danh sách hơn 100 câu hỏi và câu trả lời phỏng vấn về Git đang được xây dựng.
-</Callout>
-
 Git là công cụ quản lý mã nguồn phổ biến nhất hiện nay. Cho dù bạn là một lập trình viên hay một người không có chuyên môn kỹ thuật, Git sẽ giúp bạn với các tính năng hợp tác như theo dõi lỗi, quản lý nhiệm vụ và wikis.
 
 Git đóng vai trò quan trọng trong tổ chức để triển khai các phương pháp DevOps. Nhìn vào sự phổ biến của Git trong DevOps, rõ ràng là sẽ có nhiều cơ hội việc làm trong tương lai gần. Theo một báo cáo từ Grand View Research, thị trường DevOps toàn cầu dự kiến sẽ đạt 12,85 tỷ đô la vào năm 2025, tăng trưởng với tỷ suất CAGR là 18,60%. Dưới đây là một số câu hỏi phỏng vấn Git hàng đầu sẽ giúp bạn vượt qua cuộc phỏng vấn.
@@ -172,12 +168,9 @@ Git có thể tự động hợp nhất các thay đổi chỉ khi các commit n
 
 ### 21. Làm thế nào để giải quyết xung đột trong Git?
 
-Đây là các bước sẽ giúp bạn giải quyết xung đột trong Git:
+Để giải quyết xung đột trong Git, bạn cần đầu tiên xác định nguồn gốc của xung đột. Sau đó, bạn có thể sử dụng lệnh "git pull". Điều này sẽ kéo các thay đổi mới nhất từ kho lưu trữ từ xa và hợp nhất chúng với bản sao trên máy tính của bạn.
 
-1. Xác định các tệp gây ra xung đột.
-2. Thực hiện các thay đổi mong muốn vào các tệp.
-3. Thêm các tệp bằng lệnh git add.
-4. Bước cuối cùng là commit các thay đổi trong tệp với sự trợ giúp của lệnh git commit.
+Nếu lệnh "git pull" không giải quyết được xung đột, bạn có thể thử sử dụng lệnh "git merge". Điều này sẽ hợp nhất hai phiên bản mã nguồn bằng cách thủ công. Bạn sẽ cần giải quyết xung đột bằng cách thủ công và sau đó commit mã nguồn được hợp nhất.
 
 ### 22. Chức năng của lệnh git ls-tree là gì?
 
@@ -545,3 +538,136 @@ Có nhiều lý do mà Git được coi là một công cụ dễ sử dụng.
 - Nó có độ cong học tập đơn giản. Ngay cả những người mới học lập trình cũng có thể dễ dàng học cách sử dụng Git chỉ sau vài giờ thực hành.
 - Git rất linh hoạt và có thể dễ dàng tùy chỉnh để phù hợp với nhu cầu của bất kỳ dự án nào.
 - Và, Git rất ổn định và đáng tin cậy, do đó người dùng có thể tin tưởng rằng công việc của họ sẽ được bảo đảm an toàn.
+
+### 86. Bạn hiểu gì về Git Stash?
+
+Git stash là một công cụ mạnh mẽ cho phép bạn lưu lại các thay đổi của mình và hoàn tác thư mục làm việc của bạn về trạng thái trước đó. Điều này đặc biệt hữu ích khi chuyển sang các nhánh khác hoặc hoàn tác đến một commit trước đó.
+
+Và Git Stash sẽ chụp lại một bản snapshot (bản chụp) các thay đổi của bạn và lưu trữ chúng để sử dụng sau này.
+
+### 87. Sự khác biệt giữa các lệnh git remote và git clone là gì?
+
+Sự khác biệt chính giữa các lệnh git remote và git clone là git remote thêm một kho chứa từ xa vào như một phím tắt cho kho chứa hiện tại của bạn, trong khi đó git clone tạo ra một bản sao hoàn toàn mới của kho chứa từ xa.
+
+### 88. Hãy cho tôi biết sự khác biệt giữa git pull và git fetch là gì?
+
+Cả hai lệnh này đều sẽ lấy về bất kỳ commit mới nào từ kho chứa từ xa, nhưng chúng khác nhau trong cách xử lý các commit này.
+
+Git pull sẽ hợp nhất các commit từ kho chứa từ xa vào nhánh hiện tại, trong khi git fetch chỉ đơn giản là lấy các commit và lưu trữ chúng trong kho chứa cục bộ. Điều này có nghĩa là nếu bạn có bất kỳ thay đổi chưa được commit, git pull có thể dẫn đến xung đột hợp nhất, trong khi git fetch sẽ không làm vậy.
+
+### 89. Git và GitHub có giống nhau không?
+
+Không, Git và GitHub là hai thứ khác nhau.
+
+- Git là một hệ thống quản lý phiên bản cho phép bạn theo dõi các thay đổi đối với mã của mình.
+- GitHub là một dịch vụ lưu trữ cho kho lưu trữ Git. Bạn có thể sử dụng GitHub để lưu trữ mã của mình từ xa, hoặc bạn có thể sử dụng nó để cộng tác với các nhà phát triển khác trên một dự án.
+
+### 90. Git reflog là gì?
+
+Git reflog là một lịch sử của tất cả các thay đổi được thực hiện trên kho chứa git. Đó là một công cụ quý giá cho mục đích gỡ lỗi và khắc phục sự cố.
+
+Git reflog có thể được sử dụng để xem lịch sử của một kho chứa, xem ai đã thực hiện những thay đổi gì và khi những thay đổi đó được thực hiện.
+
+### 91. Detached head là gì?
+
+Detached HEAD là trạng thái khi con trỏ HEAD không trỏ đến commit hiện tại. Điều này có thể xảy ra nếu bạn kiểm tra một commit không phải là mới nhất, hoặc nếu bạn thiết lập lại head của mình về một commit trước đó.
+
+### 92. Làm thế nào để tránh bị detached head?
+
+Có một vài cách khác nhau để tránh bị detached HEAD.
+
+- Cách đầu tiên là đơn giản là commit các thay đổi trước khi chuyển sang các nhánh khác. Điều này sẽ đảm bảo rằng các thay đổi của bạn được lưu vào một nhánh cụ thể, và bạn sẽ không phải lo lắng về việc mất chúng khi chuyển sang các nhánh khác.
+- Một cách khác để tránh bị detached HEAD là sử dụng lệnh "git checkout" với tùy chọn "-b".
+
+### 93. Subgit là gì và bạn sử dụng Subgit ở đâu?
+
+Subgit là một công cụ để quản lý kho Git với lịch sử Subversion. Nó cho phép bạn giữ nguyên lịch sử Subversion hiện có khi chuyển sang Git, và cũng cung cấp cách để đồng bộ hóa lịch sử Git của bạn với Subversion.
+
+Có nhiều lý do mà bạn có thể muốn sử dụng Subgit, ví dụ như nếu bạn có một kho Subversion lớn với nhiều lịch sử, chuyển sang Git có thể là một công việc khổng lồ; đó là lúc Subgit có thể giúp bạn chuyển tiếp một cách trôi chảy hơn. Và nếu bạn làm việc trong một môi trường nơi Subversion là hệ thống kiểm soát phiên bản chính, sử dụng Subgit có thể giúp bạn giữ cho lịch sử Git của mình đồng bộ với toàn bộ nhóm.
+
+## Câu hỏi phỏng vấn Git nâng cao
+
+### 94. Giải thích các điểm khác nhau khi một quá trình hợp nhất (merge) có thể vào giai đoạn xung đột.
+
+Có hai giai đoạn khi một quá trình hợp nhất (merge) có thể vào giai đoạn xung đột.
+
+1. Bắt đầu quá trình hợp nhất
+
+Nếu có thay đổi trong thư mục làm việc của khu vực giai đoạn trong dự án hiện tại, quá trình hợp nhất sẽ không thể bắt đầu. Trong trường hợp này, xung đột xảy ra do các thay đổi đang chờ được ổn định bằng các lệnh Git khác nhau.
+
+2. Trong quá trình hợp nhất
+
+Sự cố trong quá trình hợp nhất cho thấy có xung đột giữa nhánh cục bộ và nhánh đang được hợp nhất. Trong trường hợp này, Git giải quyết nhiều thứ có thể, nhưng một số thứ phải được sửa thủ công trong các tệp xung đột.
+
+### 95. Chạy lệnh gì để nén N commit cuối cùng thành một commit đơn?
+
+Trong Git, nén các commit có nghĩa là kết hợp hai hoặc nhiều commit thành một.
+
+Sử dụng lệnh dưới đây để viết một thông điệp commit mới từ đầu.
+
+```bash filename="Terminal"
+git reset -soft HEAD~N && git commit
+```
+
+Nhưng nếu bạn muốn chỉnh sửa một thông điệp commit mới và thêm các thông điệp commit hiện có, thì bạn phải trích xuất các thông điệp đó và chuyển chúng cho Git commit.
+
+Lệnh dưới đây sẽ giúp bạn đạt được điều này:
+
+```bash filename="Terminal"
+git reset -soft HEAD~N && git commit -edit -m "$(git log -format=%B -reverse .HEAD@{N})"
+```
+
+### 96. Sự khác biệt giữa fork, branch và clone là gì?
+
+| Fork                                                                                                                                                                                                                  |                                                                                        Branch                                                                                        |                                                                                                                                                                                                                                  Clone |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Fork là quá trình tạo một bản sao của kho lưu trữ. Thông thường, đó là thử nghiệm trong dự án mà không ảnh hưởng đến dự án gốc. Chúng được sử dụng để đề xuất các thay đổi hoặc lấy cảm hứng từ dự án của người khác. | Các nhánh trong Git liên quan đến các dự án cá nhân trong một kho lưu trữ Git. Nếu có nhiều nhánh trong kho lưu trữ, thì mỗi nhánh có thể có các tệp và thư mục hoàn toàn khác nhau. | Bản sao Git đề cập đến việc tạo một bản sao hoặc bản sao của kho lưu trữ git hiện có trong một thư mục mới. Nhân bản tự động tạo ra một kết nối trỏ trở lại kho lưu trữ ban đầu, giúp tương tác với kho lưu trữ trung tâm rất dễ dàng. |
+
+### 97. Sự khác biệt giữa Git merge và Git rebase là gì?
+
+Git merge được sử dụng để tích hợp các commit mới vào nhánh chức năng của bạn.
+
+Tuy nhiên, mỗi lần tích hợp các thay đổi, Git merge lại tạo ra một commit hợp nhất (merge commit), gây làm lộn xộn lịch sử của nhánh chức năng.
+
+Một phương án thay thế cho Git merge đó là sử dụng Git rebase để tích hợp nhánh chức năng vào nhánh master. Git rebase sẽ tích hợp tất cả các commit mới trong nhánh master và tạo ra các commit mới hoàn toàn cho mỗi commit trong nhánh gốc, từ đó viết lại lịch sử dự án một cách sạch sẽ.
+
+### 98. Lệnh nào được sử dụng để sửa một commit bị lỗi?
+
+Để sửa một commit bị lỗi trong Git, bạn có thể sử dụng lệnh "git commit --amend". Lệnh này giúp bạn kết hợp các thay đổi được đặt trên stage với các commit trước đó thay vì tạo một commit hoàn toàn mới.
+
+### 99. Làm thế nào để khôi phục một nhánh bị xóa mà không được merge?
+
+Để khôi phục một nhánh bị xóa, trước tiên bạn có thể sử dụng lệnh "git reflog". Lệnh này sẽ liệt kê các logs được ghi lại địa phương cho tất cả các tham chiếu. Sau đó, bạn có thể xác định dấu thời gian lịch sử và khôi phục nó bằng cách sử dụng lệnh "git checkout".
+
+### 100. Git stash drop là gì?
+
+Lệnh "git stash drop" được sử dụng để xóa một lưu trữ stash cụ thể. Nếu có một stash mà bạn không sử dụng nữa hoặc bạn muốn xóa một mục cụ thể trong danh sách stash, bạn có thể sử dụng các lệnh liên quan đến stash.
+
+Giả sử bạn muốn xóa một mục được đặt tên là `stash@{abc};` bạn có thể sử dụng lệnh:
+
+```bash filename="Terminal"
+git stash drop stash@{abc}
+```
+
+### 101. Sự khác biệt giữa Reverting và Resetting là gì?
+
+| Reverting                                                                                                                                                                                                                   | Resetting                                                                                                                                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Lệnh revert trong Git được sử dụng để tạo ra một commit mới để hoàn tác các thay đổi đã được thực hiện trong commit trước đó. Khi sử dụng lệnh này, một lịch sử mới được thêm vào dự án, lịch sử hiện tại không bị sửa đổi. | Git reset là một lệnh được sử dụng để hoàn tác các thay đổi địa phương đã được thực hiện trên một kho lưu trữ Git. Git reset hoạt động trên lịch sử commit, chỉ mục staging và thư mục làm việc. |
+
+### 102. Làm thế nào để phát hiện xem một nhánh đã được merge hay chưa?
+
+Để xác định xem một nhánh đã được merge hay chưa, có hai lệnh cần sử dụng.
+
+Lệnh `git branch --merged` trả về danh sách các nhánh đã được merge vào nhánh hiện tại.
+
+Lệnh `git branch --no-merged` trả về danh sách các nhánh chưa được merge.
+
+<Callout type="warning">
+  Lưu ý: Nếu lệnh `git branch --no-merged` không hiển thị bất kỳ nhánh nào, điều đó có nghĩa là tất
+  cả các nhánh đã được merge.
+</Callout>
+
+### 103. git cherry-pick là gì?
+
+Lệnh git cherry-pick cho phép bạn chọn các commit từ một nhánh trong kho lưu trữ và áp dụng chúng vào một nhánh khác. Lệnh này hữu ích khi bạn muốn hoàn tác các thay đổi khi một commit được thực hiện nhầm vào nhánh sai. Sau đó, bạn có thể chuyển sang nhánh đúng và sử dụng lệnh này để chọn các commit cần áp dụng (cherry-pick) vào nhánh đó.
