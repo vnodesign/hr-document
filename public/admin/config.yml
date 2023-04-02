@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "public/static"
+public_folder: "/static"
+
+collections:
+  - name: "docs"
+    label: "Docs"
+    folder: "pages/docs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "Description", widget: "string" }
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "image", label: "Image", widget: "image" }
+
+  - name: "interview"
+    label: "Interview"
+    folder: "pages/interview"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "Description", widget: "string" }
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "image", label: "Image", widget: "image" }
+
+  - name: "blog"
+    label: "Blog"
+    folder: "pages/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "Description", widget: "string" }
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "image", label: "Image", widget: "image" }
