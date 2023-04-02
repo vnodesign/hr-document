@@ -9,6 +9,9 @@ collections:
   - name: "docs"
     label: "Docs"
     folder: "pages/docs"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     fields:
@@ -20,6 +23,9 @@ collections:
   - name: "interview"
     label: "Interview"
     folder: "pages/interview"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     fields:
@@ -31,6 +37,9 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "pages/blog"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     fields:
