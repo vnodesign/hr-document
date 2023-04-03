@@ -8,6 +8,8 @@ public_folder: "/static"
 media_folder: "public/static"
 public_folder: "/static"
 
+locale: 'vi'
+
 collections:
   - name: "docs"
     label: "Tài liệu"
@@ -149,23 +151,6 @@ collections:
   - name: "interview-fe"
     label: "Câu hỏi phỏng vấn Front-end"
     folder: "pages/interview/front-end"
-    identifier_field: title
-    extension: "mdx"
-    format: "frontmatter"
-    widget: "list"
-    create: true
-    slug: "{{slug}}"
-    media_folder: "public/static/interview"
-    public_folder: "/static/interview"
-    fields:
-      - { name: "title", label: "Tiêu đề", widget: "string" }
-      - { name: "description", label: "Mô tả", widget: "string" }
-      - { name: "body", label: "Nội dung", widget: "markdown" }
-      - { name: "image", label: "Ảnh cover", widget: "image" }
-
-  - name: "interview-fe-css"
-    label: "Câu hỏi phỏng vấn CSS"
-    folder: "pages/interview/front-end/css"
     identifier_field: title
     extension: "mdx"
     format: "frontmatter"
