@@ -9,8 +9,9 @@ collections:
   - name: "docs"
     label: "Tài liệu"
     folder: "pages/docs"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/docs"
@@ -24,8 +25,9 @@ collections:
   - name: "fe"
     label: "Front-end"
     folder: "pages/docs/front-end"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/docs"
@@ -39,8 +41,9 @@ collections:
   - name: "be"
     label: "Back-end"
     folder: "pages/docs/back-end"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/docs"
@@ -54,8 +57,9 @@ collections:
   - name: "linux"
     label: "Linux"
     folder: "pages/docs/linux"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/docs"
@@ -69,8 +73,9 @@ collections:
   - name: "server"
     label: "Server"
     folder: "pages/docs/linux/server"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/docs"
@@ -84,8 +89,9 @@ collections:
   - name: "design"
     label: "Design"
     folder: "pages/docs/design"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/docs"
@@ -100,8 +106,9 @@ collections:
   # - name: "nang-cao"
   #   label: "Tài liệu nâng cao"
   #   folder: "pages/docs/nang-cao"
-  #   extension: "mdx"
-  #   format: "frontmatter"
+  #   identifier_field: title
+  #   extension: mdx
+  #   widget: "list"
   #   create: true
   #   slug: "{{slug}}"
   #   media_folder: "public/static/docs"
@@ -115,8 +122,9 @@ collections:
   - name: "interview"
     label: "Câu hỏi phỏng vấn"
     folder: "pages/interview"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/interview"
@@ -130,8 +138,9 @@ collections:
   - name: "interview-fe"
     label: "Câu hỏi phỏng vấn Front-end"
     folder: "pages/interview/front-end"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/interview"
@@ -145,8 +154,9 @@ collections:
   - name: "interview-fe-css"
     label: "Câu hỏi phỏng vấn CSS"
     folder: "pages/interview/front-end/css"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/interview"
@@ -161,8 +171,9 @@ collections:
   # - name: "interview-be"
   #   label: "Câu hỏi phỏng vấn Back-end"
   #   folder: "pages/interview"
-  #   extension: "mdx"
-  #   format: "frontmatter"
+  #   identifier_field: title
+  #   extension: mdx
+  #   widget: "list"
   #   create: true
   #   slug: "{{slug}}"
   #   media_folder: "public/static/interview"
@@ -176,8 +187,9 @@ collections:
   - name: "interview-ba"
     label: "Câu hỏi phỏng vấn Business Analysis"
     folder: "pages/interview/business-analysis"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/interview"
@@ -192,8 +204,9 @@ collections:
   # - name: "interview-design"
   #   label: "Câu hỏi phỏng vấn Design"
   #   folder: "pages/interview/design"
-  #   extension: "mdx"
-  #   format: "frontmatter"
+  #   identifier_field: title
+  #   extension: mdx
+  #   widget: "list"
   #   create: true
   #   slug: "{{slug}}"
   #   media_folder: "public/static/interview"
@@ -207,8 +220,9 @@ collections:
   - name: "interview-git"
     label: "Câu hỏi phỏng vấn Git"
     folder: "pages/interview/git"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/interview"
@@ -222,8 +236,9 @@ collections:
   - name: "interview-hr"
     label: "Câu hỏi phỏng vấn HR"
     folder: "pages/interview/hr"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     media_folder: "public/static/interview"
@@ -237,8 +252,9 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "pages/blog"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
     fields:
