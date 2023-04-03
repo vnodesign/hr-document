@@ -9,10 +9,14 @@ collections:
   - name: "docs"
     label: "Docs"
     folder: "pages/docs"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
+    media_folder: "public/static/docs"
+    public_folder: "/static/docs"
+    filter: '!!path.match(/pages\\/docs\\/[^\\/]+\\.mdx$/)'
     fields:
       - { name: "title", label: "Title", widget: "string" }
       - { name: "description", label: "Description", widget: "string" }
@@ -22,10 +26,14 @@ collections:
   - name: "interview"
     label: "Interview"
     folder: "pages/interview"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
+    media_folder: "public/static/interview"
+    public_folder: "/static/interview"
+    filter: '!!path.match(/pages\\/interview\\/[^\\/]+\\.mdx$/)'
     fields:
       - { name: "title", label: "Title", widget: "string" }
       - { name: "description", label: "Description", widget: "string" }
@@ -35,10 +43,12 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "pages/blog"
-    extension: "mdx"
-    format: "frontmatter"
+    identifier_field: title
+    extension: mdx
+    widget: "list"
     create: true
     slug: "{{slug}}"
+    filter: '!!path.match(/pages\\/blog\\/[^\\/]+\\.mdx$/)'
     fields:
       - { name: "title", label: "Title", widget: "string" }
       - { name: "description", label: "Description", widget: "string" }
