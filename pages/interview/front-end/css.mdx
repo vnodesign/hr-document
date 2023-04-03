@@ -481,3 +481,77 @@ Content-box, Padding-box và Border-box
 ### 30. Làm thế nào để căn giữa một div trong một div khác?
 
 Một div trong một div A được căn giữa với sự trợ giúp của thuộc tính căn giữa div đối với nội dung thông qua kịch bản HTML và CSS cho phần tử trong DOM.
+
+### 31. Hệ thống gird là gì?
+
+Hệ thống gird CSS là một loại hệ thống bố cục mạnh mẽ của hệ thống hai chiều với các cột và hàng.
+
+### 32. Các cách khác nhau để ẩn phần tử bằng CSS là gì?
+
+`display:none`, `visibility:hidden`, `position:absolute`
+
+### 33. Pseudo-class :root đề cập đến điều gì?
+
+Pseudo-class :root là một phần của CSS selector cấp độ 3. Nó giúp nhắm mục tiêu đến phần tử cha cấp cao nhất có mặt trong DOM.
+
+### 34. Khả năng truy cập (a11y) là gì?
+
+Khả năng truy cập là để làm cho hệ thống truy cập được một cách dễ dàng, web có khả năng chuyển văn bản thành giọng nói, phù hợp cho người có khuyết tật về thể chất, được thiết kế với sự trợ giúp của các phần mềm hoặc kết hợp phần cứng.
+
+### 35. Làm thế nào để khôi phục giá trị mặc định của một thuộc tính?
+
+Từ khóa "initial" được sử dụng để khôi phục giá trị mặc định của một thuộc tính.
+
+### 36. Sự khác biệt giữa CSS Grid Layout và Flexbox là gì?
+
+CSS Grid Layout là một hệ thống hai chiều với các hàng và cột. Nó được sử dụng cho bố cục kích thước lớn.
+
+Flexbox là một lưới với hệ thống một chiều trong một hàng hoặc một cột. Nó được sử dụng cho các thành phần của một ứng dụng.
+
+### 37. Calc hoạt động như thế nào?
+
+Calc có thể được sử dụng để chỉ định kết quả của phép toán toán học của hai hoặc nhiều phần tử. Ví dụ, để chỉ định các phần tử chiều rộng bằng cách cộng hai hoặc nhiều phần tử, chúng ta có thể viết như sau:
+
+```css filename="calc.css"
+.foo {
+  width: calc(100px + 50px);
+}
+```
+
+### 38. Biến tùy chỉnh CSS là gì?
+
+Biến tùy chỉnh CSS được định nghĩa cho biến CSS cũng như biến xếp chồng với giá trị cụ thể có thể được tái sử dụng.
+
+### 39. Sự khác biệt giữa biến CSS và biến của pre-processor (SASS, LESS, Stylus) là gì?
+
+Biến CSS không cần pre-processor. Nó được kế thừa, truy cập và thao tác trong JavaScript.
+
+Biến của pre-processor không được kế thừa.
+
+### 40. Ý nghĩa của `* { box-sizing: border-box; }` trong CSS là gì? Những lợi ích của nó là gì?
+
+Box-sizing: border-box được sử dụng để cung cấp kích thước nội bộ cho các phần tử trong tài liệu bằng cách cung cấp padding và border đối với chiều cao và chiều rộng của nội dung.
+
+### 41. !important có nghĩa là gì trong CSS?
+
+Kiểu "!important" trong CSS có độ ưu tiên cao nhất. Nó cũng sẽ ghi đè lên thuộc tính được kế thừa.
+
+### 42. Progressive rendering là gì? Làm thế nào để thực hiện progressive rendering trên trang web? Những lợi ích của nó là gì?
+
+Progressive rendering là quá trình cải thiện hiệu suất của một trang web đối với thời gian tải để hiển thị nội dung một cách nhanh chóng. Sử dụng lazy loading của hình ảnh với sự trợ giúp của Intersection Observer API qua viewport.
+
+### 43. Có cần phải tải và phân tích style1.css trước khi có thể tải style2.css không?
+
+Không cần. Tệp CSS sẽ được tải xuống qua trình duyệt để xuất hiện trên trang HTML.
+
+### 44. Làm thế nào để xác định trình duyệt có hỗ trợ một tính năng cụ thể không?
+
+Thẻ `@support` trong CSS được sử dụng để quét và xác định liệu trình duyệt có hỗ trợ một tính năng cụ thể hay không.
+
+### 45. Cách hoạt động của vị trí tuyệt đối (Absolute positioning) là gì?
+
+Absolute positioning (định vị tuyệt đối) được sử dụng để đặt phần tử và sau đó loại bỏ phần tử đó khỏi tài liệu HTML trong quá trình bố cục trang web bình thường mà không tạo ra bất kỳ khoảng trống nào cho phần tử đó trên trang web. Phần tử có thể được đặt theo vị trí của phần tử cha được định vị gần nhất; nếu không tìm thấy phần tử cha được định vị, phần tử sẽ được đặt theo box container ban đầu. Giá trị được cung cấp cho top, right, left và bottom xác định vị trí cuối cùng của phần tử.
+
+### 46. Thuộc tính overflow: hidden có hoạt động không?
+
+Thuộc tính `overflow:hidden` được sử dụng để chỉ định việc cắt nội dung. Chúng ta cần thêm thanh cuộn vào khu vực nội dung khi kích thước của bộ chứa được chỉ định vượt quá giới hạn nội dung, nơi nội dung được bao quanh. Điều này làm cho nội dung không hiển thị thông qua việc cắt, cũng như giá trị overflow sẽ được ẩn.
