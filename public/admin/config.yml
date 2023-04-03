@@ -10,7 +10,8 @@ collections:
     label: "Tài liệu"
     folder: "pages/docs"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
@@ -26,7 +27,8 @@ collections:
     label: "Front-end"
     folder: "pages/docs/front-end"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
@@ -42,7 +44,8 @@ collections:
     label: "Back-end"
     folder: "pages/docs/back-end"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
@@ -58,7 +61,8 @@ collections:
     label: "Linux"
     folder: "pages/docs/linux"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
@@ -74,7 +78,8 @@ collections:
     label: "Server"
     folder: "pages/docs/linux/server"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
@@ -90,7 +95,8 @@ collections:
     label: "Design"
     folder: "pages/docs/design"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
@@ -107,7 +113,8 @@ collections:
   #   label: "Tài liệu nâng cao"
   #   folder: "pages/docs/nang-cao"
   #   identifier_field: title
-  #   extension: mdx
+  #   extension: "mdx"
+  #   format: "frontmatter"
   #   widget: "list"
   #   create: true
   #   slug: "{{slug}}"
@@ -123,7 +130,8 @@ collections:
     label: "Câu hỏi phỏng vấn"
     folder: "pages/interview"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
@@ -155,7 +163,8 @@ collections:
     label: "Câu hỏi phỏng vấn CSS"
     folder: "pages/interview/front-end/css"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
@@ -172,7 +181,8 @@ collections:
   #   label: "Câu hỏi phỏng vấn Back-end"
   #   folder: "pages/interview"
   #   identifier_field: title
-  #   extension: mdx
+  #   extension: "mdx"
+  #   format: "frontmatter"
   #   widget: "list"
   #   create: true
   #   slug: "{{slug}}"
@@ -188,7 +198,8 @@ collections:
     label: "Câu hỏi phỏng vấn Business Analysis"
     folder: "pages/interview/business-analysis"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
@@ -205,7 +216,8 @@ collections:
   #   label: "Câu hỏi phỏng vấn Design"
   #   folder: "pages/interview/design"
   #   identifier_field: title
-  #   extension: mdx
+  #   extension: "mdx"
+  #   format: "frontmatter"
   #   widget: "list"
   #   create: true
   #   slug: "{{slug}}"
@@ -221,7 +233,8 @@ collections:
     label: "Câu hỏi phỏng vấn Git"
     folder: "pages/interview/git"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
@@ -237,7 +250,8 @@ collections:
     label: "Câu hỏi phỏng vấn HR"
     folder: "pages/interview/hr"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
@@ -253,7 +267,8 @@ collections:
     label: "Blog"
     folder: "pages/blog"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
