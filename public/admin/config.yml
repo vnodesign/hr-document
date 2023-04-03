@@ -7,7 +7,7 @@ public_folder: "/static"
 
 collections:
   - name: "docs"
-    label: "Docs"
+    label: "Tài liệu"
     folder: "pages/docs"
     extension: "mdx"
     format: "frontmatter"
@@ -15,15 +15,105 @@ collections:
     slug: "{{slug}}"
     media_folder: "public/static/docs"
     public_folder: "/static/docs"
-    filter: '!!path.match(/pages\\/docs\\/[^\\/]+\\.mdx$/)'
     fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: "description", label: "Description", widget: "string" }
-      - { name: "body", label: "Body", widget: "markdown" }
-      - { name: "image", label: "Image", widget: "image" }
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  - name: "fe"
+    label: "Front-end"
+    folder: "pages/docs/front-end"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "public/static/docs"
+    public_folder: "/static/docs"
+    fields:
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  - name: "be"
+    label: "Back-end"
+    folder: "pages/docs/back-end"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "public/static/docs"
+    public_folder: "/static/docs"
+    fields:
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  - name: "linux"
+    label: "Linux"
+    folder: "pages/docs/linux"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "public/static/docs"
+    public_folder: "/static/docs"
+    fields:
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  - name: "server"
+    label: "Server"
+    folder: "pages/docs/linux/server"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "public/static/docs"
+    public_folder: "/static/docs"
+    fields:
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  - name: "design"
+    label: "Design"
+    folder: "pages/docs/design"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "public/static/docs"
+    public_folder: "/static/docs"
+    fields:
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  # current not updated
+  # - name: "nang-cao"
+  #   label: "Tài liệu nâng cao"
+  #   folder: "pages/docs/nang-cao"
+  #   extension: "mdx"
+  #   format: "frontmatter"
+  #   create: true
+  #   slug: "{{slug}}"
+  #   media_folder: "public/static/docs"
+  #   public_folder: "/static/docs"
+  #   fields:
+  #     - { name: "title", label: "Tiêu đề", widget: "string" }
+  #     - { name: "description", label: "Mô tả", widget: "string" }
+  #     - { name: "body", label: "Nội dung", widget: "markdown" }
+  #     - { name: "image", label: "Ảnh cover", widget: "image" }
 
   - name: "interview"
-    label: "Interview"
+    label: "Câu hỏi phỏng vấn"
     folder: "pages/interview"
     extension: "mdx"
     format: "frontmatter"
@@ -31,12 +121,118 @@ collections:
     slug: "{{slug}}"
     media_folder: "public/static/interview"
     public_folder: "/static/interview"
-    filter: '!!path.match(/pages\\/interview\\/[^\\/]+\\.mdx$/)'
     fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: "description", label: "Description", widget: "string" }
-      - { name: "body", label: "Body", widget: "markdown" }
-      - { name: "image", label: "Image", widget: "image" }
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  - name: "interview-fe"
+    label: "Câu hỏi phỏng vấn Front-end"
+    folder: "pages/interview/front-end"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "public/static/interview"
+    public_folder: "/static/interview"
+    fields:
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  - name: "interview-fe-css"
+    label: "Câu hỏi phỏng vấn CSS"
+    folder: "pages/interview/front-end/css"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "public/static/interview"
+    public_folder: "/static/interview"
+    fields:
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  # current not updated
+  # - name: "interview-be"
+  #   label: "Câu hỏi phỏng vấn Back-end"
+  #   folder: "pages/interview"
+  #   extension: "mdx"
+  #   format: "frontmatter"
+  #   create: true
+  #   slug: "{{slug}}"
+  #   media_folder: "public/static/interview"
+  #   public_folder: "/static/interview"
+  #   fields:
+  #     - { name: "title", label: "Tiêu đề", widget: "string" }
+  #     - { name: "description", label: "Mô tả", widget: "string" }
+  #     - { name: "body", label: "Nội dung", widget: "markdown" }
+  #     - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  - name: "interview-ba"
+    label: "Câu hỏi phỏng vấn Business Analysis"
+    folder: "pages/interview/business-analysis"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "public/static/interview"
+    public_folder: "/static/interview"
+    fields:
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  # current not updated
+  # - name: "interview-design"
+  #   label: "Câu hỏi phỏng vấn Design"
+  #   folder: "pages/interview/design"
+  #   extension: "mdx"
+  #   format: "frontmatter"
+  #   create: true
+  #   slug: "{{slug}}"
+  #   media_folder: "public/static/interview"
+  #   public_folder: "/static/interview"
+  #   fields:
+  #     - { name: "title", label: "Tiêu đề", widget: "string" }
+  #     - { name: "description", label: "Mô tả", widget: "string" }
+  #     - { name: "body", label: "Nội dung", widget: "markdown" }
+  #     - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  - name: "interview-git"
+    label: "Câu hỏi phỏng vấn Git"
+    folder: "pages/interview/git"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "public/static/interview"
+    public_folder: "/static/interview"
+    fields:
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
+
+  - name: "interview-hr"
+    label: "Câu hỏi phỏng vấn HR"
+    folder: "pages/interview/hr"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "public/static/interview"
+    public_folder: "/static/interview"
+    fields:
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
 
   - name: "blog"
     label: "Blog"
@@ -45,10 +241,9 @@ collections:
     format: "frontmatter"
     create: true
     slug: "{{slug}}"
-    filter: '!!path.match(/pages\\/blog\\/[^\\/]+\\.mdx$/)'
     fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: "description", label: "Description", widget: "string" }
-      - { name: "body", label: "Body", widget: "markdown" }
-      - { name: "date", label: "Date", widget: "datetime" }
-      - { name: "image", label: "Image", widget: "image" }
+      - { name: "title", label: "Tiêu đề", widget: "string" }
+      - { name: "description", label: "Mô tả", widget: "string" }
+      - { name: "body", label: "Nội dung", widget: "markdown" }
+      - { name: "date", label: "Ngày đăng", widget: "datetime" }
+      - { name: "image", label: "Ảnh cover", widget: "image" }
