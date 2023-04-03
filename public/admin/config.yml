@@ -5,6 +5,9 @@ backend:
 media_folder: "public/static"
 public_folder: "/static"
 
+media_folder: "public/static"
+public_folder: "/static"
+
 collections:
   - name: "docs"
     label: "Tài liệu"
@@ -147,7 +150,8 @@ collections:
     label: "Câu hỏi phỏng vấn Front-end"
     folder: "pages/interview/front-end"
     identifier_field: title
-    extension: mdx
+    extension: "mdx"
+    format: "frontmatter"
     widget: "list"
     create: true
     slug: "{{slug}}"
