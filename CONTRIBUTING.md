@@ -2,7 +2,7 @@
 
 Chào mừng bạn đến với dự án của chúng tôi! Dự án này nhằm mục đích cung cấp các kiến thức và tài liệu về Front End, Back End, Linux và Design cho những bạn HR mới bước chân vào nghề tuyển dụng. Đây là một dự án đầy tham vọng và chúng tôi tin rằng với sự đóng góp của nhiều người, nó sẽ trở thành một nguồn tài liệu tuyệt vời cho người mới vào nghề.
 
-Chúng tôi rất mong nhận được sự đóng góp từ bạn với dự án này. Bất kỳ đóng góp nào của bạn đều rất quan trọng đối với chúng tôi. Để giúp bạn đóng góp cho dự án của chúng tôi, dưới đây là một số hướng dẫn cho bạn/
+Chúng tôi rất mong nhận được sự đóng góp từ bạn với dự án này. Bất kỳ đóng góp nào của bạn đều rất quan trọng đối với chúng tôi. Để giúp bạn đóng góp cho dự án của chúng tôi, dưới đây là một số hướng dẫn cho bạn.
 
 ## Cách đóng góp
 
