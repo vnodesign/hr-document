@@ -2,6 +2,8 @@
 
 [HR Documentation](https://hr.penci.me) là một nền tảng chia sẻ các kiến thức và tài liệu về Front End, Back End, Linux và Design dành cho những bạn HR mới bước chân vào nghề tuyển dụng.
 
+![Documentation Card](./public/static/documentation-card.png)
+
 ## Thời gian hoạt động
 
 - Thành lập ngày 05/11/2022.

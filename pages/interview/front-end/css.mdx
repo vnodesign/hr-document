@@ -1,13 +1,10 @@
 ---
 title: 'Danh sách 75+ câu hỏi và câu trả lời phỏng vấn về CSS'
 image: /static/interview/frontend-interview.png
+description: 'Danh sách này sẽ hữu ích cho cả các chuyên gia có kinh nghiệm và những người mới ra trường. Hãy để chúng tôi bắt đầu với hướng dẫn câu hỏi phỏng vấn CSS này.'
 ---
 
 # Danh sách 75+ câu hỏi và câu trả lời phỏng vấn về CSS
-
-<Callout type="warning">
-  Danh sách 75+ câu hỏi và câu trả lời phỏng vấn về CSS đang được xây dựng.
-</Callout>
 
 Các ứng dụng web và trang web đang gia tăng trong mọi ngành và CSS là điều cần thiết để xây dựng các trang web hấp dẫn. Hiện tại, nhu cầu về các nhà phát triển web có kiến thức tốt về HTML và CSS là rất lớn. Để xây dựng sự nghiệp trong lĩnh vực thiết kế web, các ứng viên cần vượt qua các cuộc phỏng vấn nơi họ đặt câu hỏi phỏng vấn CSS.
 
@@ -555,3 +552,121 @@ Absolute positioning (định vị tuyệt đối) được sử dụng để đ
 ### 46. Thuộc tính overflow: hidden có hoạt động không?
 
 Thuộc tính `overflow:hidden` được sử dụng để chỉ định việc cắt nội dung. Chúng ta cần thêm thanh cuộn vào khu vực nội dung khi kích thước của bộ chứa được chỉ định vượt quá giới hạn nội dung, nơi nội dung được bao quanh. Điều này làm cho nội dung không hiển thị thông qua việc cắt, cũng như giá trị overflow sẽ được ẩn.
+
+## Các câu hỏi phỏng vấn CSS nâng cao
+
+CSS là một phần quan trọng của phát triển web và là một kỹ năng cần thiết cho các lập trình viên front-end. Khi phỏng vấn cho vị trí này, bạn có thể gặp các câu hỏi phức tạp liên quan đến CSS. Sau đây là một số câu hỏi phỏng vấn CSS nâng cao mà bạn có thể gặp.
+
+Các câu hỏi này sẽ giúp bạn hiểu rõ hơn về CSS và chuẩn bị tốt hơn cho phỏng vấn của mình. Hãy luyện tập trả lời các câu hỏi này và cố gắng nắm vững kiến thức CSS để tự tin hơn trong quá trình phỏng vấn.
+
+### 1. Khi nào bạn nên sử dụng `translate()` thay vì absolute positioning?
+
+Translate là giá trị transform của CSS. Khi thay đổi opacity hoặc transform, trình duyệt không kích hoạt reflow hoặc repaint. Transform yêu cầu trình duyệt tạo lớp GPU cho các phần tử, nhưng sử dụng các thuộc tính vị trí tuyệt đối sẽ thay đổi sử dụng CPU. `translate()` hiệu quả hơn và dẫn đến thời gian vẽ ngắn hơn. Khi sử dụng `translate()`, phần tử chiếm không gian ban đầu, không giống như thay đổi vị trí tuyệt đối.
+
+### 2. Đặt tên cho các cách khác nhau để định vị một số khía cạnh trong CSS.
+
+Thuộc tính định vị chỉ định phương pháp định vị. Năm giá trị định vị khác nhau là cố định (fixed), tĩnh (static), tuyệt đối (absolute), dính (sticky) và tương đối (relative). Các phần tử được định vị bằng các thuộc tính top, left, right và bottom. Những thuộc tính này cần được thiết lập trước và chúng hoạt động phụ thuộc vào giá trị định vị.
+
+### 3. Mixins là gì?
+
+Mixin tương tự như khối mã lệnh hàm trả về một giá trị duy nhất `--mixin` là các dòng mã Sass trực tiếp biên dịch thành các kiểu CSS. Đồng thời, hàm trả về một giá trị trở thành giá trị cho một thuộc tính CSS hoặc một cái gì đó có thể được chuyển cho mixin khác.
+
+### 4. Làm thế nào để tối ưu hóa trang web cho in ấn?
+
+Xác định và điều khiển 'khu vực nội dung' của trang web. Một trang web thường có phần chân trang, phần đầu trang, thanh bên, thanh điều hướng và khu vực nội dung chính. Hầu hết công việc được thực hiện bằng cách kiểm soát khu vực nội dung. Do đó, chinh phục phương tiện in mà không thay đổi tính toàn vẹn của trang web bằng cách sử dụng ngắt trang, tạo một stylesheet cho in ấn, đặt kích thước trang cho in ấn và tránh bảng HTML không cần thiết.
+
+### 5. CSS hoạt động dưới nền tảng như thế nào?
+
+Khi trình duyệt hiển thị một tài liệu, nó kết hợp thông tin về kiểu dáng và nội dung của tài liệu. Tài liệu được xử lý theo hai giai đoạn:
+
+Chuyển đổi HTML và CSS thành mô hình đối tượng tài liệu (DOM).
+
+DOM hiển thị nội dung của trình duyệt.
+
+### 6. Phân biệt giữa sử dụng Selector ID và Selector class.
+
+Selector ID:
+
+```css filename="selector-id.css"
+#right {
+  text-align: right;
+  color: blue;
+}
+```
+
+Selector class:
+
+```css filename="selector-class.css"
+.right {
+  text-align: right;
+  color: blue;
+}
+```
+
+### 7. Hãy cho chúng tôi biết về thuộc tính float trong CSS.
+
+Thuộc tính float của CSS định vị một hình ảnh sang phải hoặc sang trái nếu cần thiết, bao gồm cả văn bản bao quanh nó. Tất cả các thuộc tính của các phần tử được sử dụng trước đó vẫn không đổi.
+
+### 8. Pseudo-elements là gì?
+
+Pseudo-elements cung cấp hiệu ứng đặc biệt cho một số bộ chọn. CSS được sử dụng để áp dụng các kiểu trong các đánh dấu HTML. Nếu việc đánh dấu hoặc kiểu bổ sung không khả thi cho một tài liệu, các pseudo-element giúp đặt thêm các đánh dấu mà không làm phiền tới tài liệu gốc.
+
+### 9. Sự khác biệt giữa thẻ logic và thẻ vật lý.
+
+Các thẻ logic tập trung chủ yếu vào nội dung và có tuổi đời lớn hơn so với các thẻ vật lý. Các thẻ logic không được sử dụng nhiều trong việc trình bày và thẩm mỹ. Trong khi đó, các thẻ vật lý được áp dụng nhiều trong việc trình bày.
+
+### 10. Cách hoạt động của các loại phương tiện trong CSS?
+
+Các thuộc tính phương tiện bao gồm bố cục trang in ấn, giọng nói và màn hình. Ví dụ về việc sử dụng loại phương tiện in ấn:
+
+```css filename="print.css"
+@media print {
+  h2 {
+    background-color: blue;
+  }
+}
+```
+
+## Các câu hỏi phỏng vấn CSS thường gặp
+
+Trong phần cuối này, chúng ta sẽ xem các câu hỏi phỏng vấn CSS thường được hỏi nhất trong phỏng vấn!
+
+### 1. Hãy cho chúng tôi biết một số thông tin về CSS3.
+
+CSS3 được chia thành các module và được hỗ trợ bởi hầu hết các trình duyệt. Nhiều tính năng liên quan đến đồ họa được giới thiệu trong CSS3 như box-shadow, Border-radius và flexbox. Người dùng có thể tạo nhiều hình ảnh nền chính xác bằng cách sử dụng các thuộc tính như background-position, background-repeat và background-image styles.
+
+### 2. Selector CSS được sử dụng như thế nào?
+
+Với Selector CSS, chúng ta có thể chọn nội dung mà chúng ta muốn định dạng để nối liền giữa tệp HTML và bảng phong cách. Cú pháp Selector CSS là "chọn" các phần tử HTML được tạo ra trên class, id, type, vv.
+
+### 3. CSS image scripts là gì?
+
+Một nhóm hình ảnh được đặt vào một hình ảnh là một CSS image script. Nó có thể giảm thời gian tải và hiển thị nhiều hình ảnh trong một trang web duy nhất.
+
+### 4. Giải thích về CSS specificity.
+
+CSS specificity là một thứ hạng hoặc điểm số quyết định việc sử dụng khai báo kiểu cho một phần tử. ID selector có độ ưu tiên cao, trong khi universal selector `*` có độ ưu tiên thấp. Bốn danh mục CSS quyết định mức độ ưu tiên của selector là ID, inline style, phần tử / pseudo-element và lớp và thuộc tính.
+
+### 5. Định nghĩa gradients trong CSS.
+
+Một thuộc tính của CSS cho phép hiển thị sự chuyển đổi mượt mà giữa hai hoặc nhiều màu đã được chỉ định. Các loại gradients là linear và radial.
+
+### 6. Những thuộc tính của flexbox là gì?
+
+Các thuộc tính của flexbox bao gồm flex-direction, wrap, flow, content, align-items và content.
+
+### 7. Hãy cho chúng tôi biết về việc sử dụng CSS Box Model.
+
+CSS Box Model là một phần tử HTML dùng để đóng gói thành một khối bao gồm padding, border, margin và nội dung thực tế. Với box model, chúng ta có thể thêm viền xung quanh các phần tử và xác định khoảng cách giữa các phần tử.
+
+### 8. Những trạng thái vị trí trong CSS là gì?
+
+Có bốn trạng thái vị trí (position) trong CSS là `position:relative`, `position:static`, `position:absolute` và `position:fixed`. Trạng thái mặc định là `position:static`.
+
+### 9. Phân biệt giữa position absolute và position relative trong CSS.
+
+Sự khác biệt chính là `position:relative` được sử dụng cho cùng một thẻ trong CSS. Nếu chúng ta viết `right:20px`, thì padding sẽ di chuyển 20px sang phải. Trong khi đó `position:absolute` là tương đối với phần tử cha không phải là `position:static`, tức là nếu chúng ta viết `right:20px`, kết quả sẽ cách mép phải của phần tử cha 20px.
+
+### 10. Điểm chung giữa class và ID là gì?
+
+Cả class và ID đều được sử dụng trong HTML để gán giá trị từ CSS. ID được sử dụng như một phần tử, trong khi class được sử dụng như một khối.

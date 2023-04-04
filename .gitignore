@@ -1,4 +1,11 @@
 # Auto Generated from MacOS
 .DS_Store
 
+# Auto Generated from Node Manager
 node_modules
+
+# Hide any file json
+**/*.json
+
+# Hide any file from folder pages
+pages/*.*
