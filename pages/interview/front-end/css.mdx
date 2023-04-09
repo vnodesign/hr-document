@@ -103,7 +103,7 @@ Tóm lại, CSS3 là một phiên bản cập nhật và mở rộng của CSS2,
 Có nhiều cách để tích hợp CSS vào một trang HTML. Sau đây là các phương pháp phổ biến nhất:
 
 <Steps>
-#### Inline CSS
+### Inline CSS
 
 Bạn có thể sử dụng thuộc tính style của thẻ HTML để định dạng trực tiếp cho phần tử đó.
 
@@ -120,7 +120,7 @@ Ví dụ:
 </html>
 ```
 
-#### Internal CSS
+### Internal CSS
 
 Bạn có thể thêm CSS trực tiếp vào trang HTML bằng cách sử dụng thẻ `<style>`.
 
@@ -142,7 +142,7 @@ Ví dụ:
 </html>
 ```
 
-#### External CSS
+### External CSS
 
 Bạn có thể tạo một tệp CSS riêng biệt và sau đó tham chiếu đến nó từ trang HTML.
 
@@ -300,15 +300,19 @@ Có 4 giá trị background-repeat khác nhau:
 Ví dụ, để lặp lại hình ảnh theo cả chiều ngang và chiều dọc của phần tử, chúng ta sử dụng mã CSS sau:
 
 ```css filename="bg-repeat.css"
-background-image: url('image.png');
-background-repeat: repeat;
+body {
+  background-image: url('image.png');
+  background-repeat: repeat;
+}
 ```
 
 Nếu chúng ta muốn lặp lại hình ảnh theo chiều ngang của phần tử, nhưng không lặp lại theo chiều dọc, chúng ta sử dụng mã CSS sau:
 
 ```css filename="bg-repeat-x.css"
-background-image: url('image.png');
-background-repeat: repeat-x;
+body {
+  background-image: url('image.png');
+  background-repeat: repeat-x;
+}
 ```
 
 Chúng ta cũng có thể kết hợp các giá trị khác nhau để kiểm soát lặp lại hình ảnh theo cách tùy chỉnh.
