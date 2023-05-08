@@ -1,4 +1,8 @@
-# Giới thiệu về HR Documentation
+# hr-document
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b3378648-2c30-4dcc-ab7f-91720297c6cd/deploy-status)](https://api.netlify.com/api/v1/badges/b3378648-2c30-4dcc-ab7f-91720297c6cd/deploy-status) ![GitHub repo size](https://img.shields.io/github/repo-size/vnodesign/hr-document) ![GitHub](https://img.shields.io/github/license/vnodesign/hr-document)
+
+## Giới thiệu về HR Documentation
 
 [HR Documentation](https://hrpenci.site) là một nền tảng chia sẻ các kiến thức và tài liệu về Front End, Back End, Linux và Design dành cho những bạn HR mới bước chân vào nghề tuyển dụng.
 
@@ -7,10 +11,6 @@
 ## Thời gian hoạt động
 
 - Thành lập ngày 05/11/2022.
-
-## Trạng thái hệ thống
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b3378648-2c30-4dcc-ab7f-91720297c6cd/deploy-status)](https://api.netlify.com/api/v1/badges/b3378648-2c30-4dcc-ab7f-91720297c6cd/deploy-status)
 
 ## Mục tiêu hoạt động
 
