@@ -8,6 +8,10 @@
 
 - Thành lập ngày 05/11/2022.
 
+## Trạng thái hệ thống
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b3378648-2c30-4dcc-ab7f-91720297c6cd/deploy-status)](https://api.netlify.com/api/v1/badges/b3378648-2c30-4dcc-ab7f-91720297c6cd/deploy-status)
+
 ## Mục tiêu hoạt động
 
 HR Documentation hoạt động như một trang web chia sẻ kiến thức, dành cho các bạn HR mới bước chân vào nghề tuyển dụng. Ngoài ra, HR Documentation cũng cung cấp các thông tin, bài viết liên quan đến các công cụ, library và framework về ngành IT và ngành Design.
