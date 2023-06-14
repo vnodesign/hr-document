@@ -1,15 +1,29 @@
 ---
 title: 'Vuex là gì'
 image: /static/docs/vuex.png
-description: 'Vuex là một thư viện quản lý trạng thái (state management) cho ứng dụng Vue.js'
+description:
+  'Vuex là một thư viện quản lý trạng thái (state management) cho ứng dụng
+  Vue.js'
 ---
 
 # Vuex là gì?
 
 ![Vuex là gì](/static/docs/vuex.png)
 
-Vuex là một thư viện quản lý trạng thái (state management) cho ứng dụng Vue.js. Nó giúp cho việc quản lý và truy xuất các dữ liệu được chia sẻ giữa các thành phần (component) của ứng dụng dễ dàng hơn. Bằng cách sử dụng Vuex, các thành phần có thể truy cập vào dữ liệu một cách đồng bộ, mà không cần phải truyền dữ liệu qua các thành phần con (child components) hoặc sử dụng các sự kiện (events) để giao tiếp.
+Vuex là một thư viện quản lý trạng thái (state management) cho ứng dụng Vue.js.
+Nó giúp cho việc quản lý và truy xuất các dữ liệu được chia sẻ giữa các thành
+phần (component) của ứng dụng dễ dàng hơn. Bằng cách sử dụng Vuex, các thành
+phần có thể truy cập vào dữ liệu một cách đồng bộ, mà không cần phải truyền dữ
+liệu qua các thành phần con (child components) hoặc sử dụng các sự kiện (events)
+để giao tiếp.
 
-Vuex sử dụng mô hình "store" để quản lý trạng thái của ứng dụng. "Store" là nơi lưu trữ toàn bộ trạng thái của ứng dụng, và các thành phần có thể truy xuất đến trạng thái này thông qua các hàm getter và setter. Trong Vuex, các trạng thái được lưu trữ trong một đối tượng duy nhất được gọi là "state", và các hành động (actions) có thể được thực hiện để cập nhật trạng thái này.
+Vuex sử dụng mô hình "store" để quản lý trạng thái của ứng dụng. "Store" là nơi
+lưu trữ toàn bộ trạng thái của ứng dụng, và các thành phần có thể truy xuất đến
+trạng thái này thông qua các hàm getter và setter. Trong Vuex, các trạng thái
+được lưu trữ trong một đối tượng duy nhất được gọi là "state", và các hành động
+(actions) có thể được thực hiện để cập nhật trạng thái này.
 
-Một trong những ưu điểm của Vuex là nó cho phép người phát triển dễ dàng đưa ra các quyết định về cách quản lý trạng thái và cách truy xuất dữ liệu. Nó cũng cho phép người phát triển xác định các quy tắc cho việc cập nhật trạng thái, để đảm bảo rằng các thành phần không gây ra xung đột trong việc cập nhật dữ liệu.
+Một trong những ưu điểm của Vuex là nó cho phép người phát triển dễ dàng đưa ra
+các quyết định về cách quản lý trạng thái và cách truy xuất dữ liệu. Nó cũng cho
+phép người phát triển xác định các quy tắc cho việc cập nhật trạng thái, để đảm
+bảo rằng các thành phần không gây ra xung đột trong việc cập nhật dữ liệu.
