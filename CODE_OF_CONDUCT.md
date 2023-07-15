@@ -38,7 +38,7 @@ Examples of representing our community include using an official e-mail address,
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at me@tuanducdesign.com.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at tuanductran_dev@hotmail.com.
 
 All complaints will be reviewed and investigated promptly and fairly.
 
