@@ -9,13 +9,13 @@
     "prettier": "prettier --write ."
   },
   "lint-staged": {
-    "*.+(json|md|mdx)": [
+    "*.+(md|mdx)": [
       "pnpm prettier"
     ]
   },
   "devDependencies": {
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.0",
-    "prettier": "^2.8.4"
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0"
   }
 }
