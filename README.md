@@ -29,7 +29,9 @@ Dưới đây là 4 tiêu chí hoạt động của HR Documentation:
 
 ## Giới thiệu về group HR Community
 
-Qua quá trình tìm kiếm các job về ngành IT và ngành Design, thì mình có nhận thấy rằng. Có rất ít bạn hiểu về các khái niệm trong ngành này, nên vì thế mình sẽ chia sẻ thêm một số kinh nghiệm giúp các bạn hiểu rõ về ngành IT và ngành Design này nhé, trước là để các bạn lấy kinh nghiệm, sau là để các bạn hiểu rõ hơn về bạn ứng viên đó, khi mà các bạn đã không hiểu về các khái niệm trong ngành mà mình đang tuyển, thì rất khó tìm được ứng viên, thậm chí còn làm mất thời gian của bạn ứng viên đó nữa.
+HR Community - Đăng Tin Tuyển Dụng, Tìm Kiếm Việc Làm Về IT Và Design là một cộng đồng chuyên về tuyển dụng và việc làm trong lĩnh vực IT và Design. Nơi đây không chỉ là một nơi để nhà tuyển dụng và ứng viên tìm kiếm cơ hội việc làm, mà còn là một nơi để chia sẻ kinh nghiệm và học hỏi từ những người có chung sở thích.
+Với sự phát triển nhanh chóng của ngành IT và Design, việc tìm kiếm nhân tài trở thành một thách thức đối với các nhà tuyển dụng. Tuy nhiên, nhóm HR Community đã giải quyết vấn đề này bằng cách tạo ra một cộng đồng đầy năng lượng, nơi các thành viên có thể giao lưu, chia sẻ kiến thức và trao đổi ý kiến về các chủ đề trong lĩnh vực IT và Design.
+Về tổng thể, HR Community - Đăng Tin Tuyển Dụng, Tìm Kiếm Việc Làm Về IT Và Design là một cộng đồng năng động và đầy đam mê, nơi các nhà tuyển dụng và ứng viên có thể tìm kiếm cơ hội việc làm và học hỏi từ nhau. Nơi đây là một điểm đến lý tưởng cho những người đang làm trong lĩnh vực IT và Design muốn kết nối và phát triển nghề nghiệp của mình.
 
 ## Đâu là lý do mình tạo ra group HR Community?
 
