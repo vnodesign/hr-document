@@ -4,3 +4,6 @@ pnpm-lock.yaml
 
 # assets
 public
+
+# github folders
+.github
