@@ -1,6 +1,6 @@
 # dependencies
 node_modules
-pnpm-lock.yaml
+bun.lockb
 
 # assets
 public

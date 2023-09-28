@@ -1,10 +1,10 @@
 {
   "name": "hr-document",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/vnodesign/hr-document.git",
   "author": "Tuan Duc Design <nguoisoidangyeu@outlook.com.vn>",
   "license": "MIT",
-  "packageManager": "pnpm@8.8.0",
+  "packageManager": "bun@1.0.3",
   "scripts": {
     "prepare": "husky install",
     "prettier:write": "prettier --write \"**/*.{md,mdx}\" --cache",
@@ -12,7 +12,7 @@
   },
   "lint-staged": {
     "*.+(md|mdx)": [
-      "pnpm prettier:check && pnpm prettier:write"
+      "bun prettier:check && bun prettier:write"
     ]
   },
   "devDependencies": {
