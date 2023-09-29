@@ -4,7 +4,7 @@
   "repository": "https://github.com/vnodesign/hr-document.git",
   "author": "Tuan Duc Design <nguoisoidangyeu@outlook.com.vn>",
   "license": "MIT",
-  "packageManager": "bun@1.0.3",
+  "packageManager": "pnpm@8.8.0",
   "scripts": {
     "prepare": "husky install",
     "prettier:write": "prettier --write \"**/*.{md,mdx}\" --cache",
@@ -12,7 +12,7 @@
   },
   "lint-staged": {
     "*.+(md|mdx)": [
-      "bun prettier:check && bun prettier:write"
+      "pnpm prettier:check && pnpm prettier:write"
     ]
   },
   "devDependencies": {
