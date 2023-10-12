@@ -1,5 +1,6 @@
 ---
 title: Hướng dẫn đóng góp cho dự án
+description: Hướng dẫn đóng góp nội dung cho dự án HR Documentation
 ---
 
 # Hướng dẫn đóng góp cho dự án
@@ -15,6 +16,8 @@ nào của bạn đều rất quan trọng đối với chúng tôi. Để giúp
 của chúng tôi, dưới đây là một số hướng dẫn cho bạn.
 
 ## Cách đóng góp
+
+<Steps>
 
 ### 1. Fork dự án
 
@@ -52,287 +55,7 @@ dụng các công cụ phù hợp để tạo và chỉnh sửa các file như T
 Dillinger, Mark Text, hoặc MacDown. Ngoài ra, hãy đảm bảo rằng tất cả các thay
 đổi của bạn đều đã được kiểm tra kỹ trước khi tạo pull request.
 
-### 5. Các Components trên MDX
-
-Dưới đây là các Components được sử dụng trên tệp MDX.
-
-#### 5.1. Card và Card Group
-
-**Với Card:**
-
-<Card title="Front-end là gì?" icon="TableLayout" href="/docs/front-end">
-  Đây là cách bạn sử dụng card có biểu tượng và liên kết. Bấm vào card này sẽ
-  đưa bạn đến trang Front-end là gì.
-</Card>
-
-```mdx
-<Card title="Front-end là gì?" icon="TableLayout" href="/docs/front-end">
-  Đây là cách bạn sử dụng card có biểu tượng và liên kết. Bấm vào card này sẽ
-  đưa bạn đến trang Front-end là gì.
-</Card>
-```
-
-**Với Card Group:**
-
-<CardGroup cols={2}>
-  <Card title="Front-end" icon="TableLayout">
-    Front-end là giao diện người dùng.
-  </Card>
-  <Card title="Back-end" icon="Server">
-    Back-end là những thứ được xử lý phía sau Front-end.
-  </Card>
-  <Card title="Linux" icon="Server">
-    Linux là một hệ điều hành
-  </Card>
-  <Card title="Linux Server" icon="Server">
-    Linux Server là một máy chủ giúp chạy các ứng dụng web trên hệ điều hành
-    Linux.
-  </Card>
-</CardGroup>
-
-```mdx
-<CardGroup cols={2}>
-  <Card title="Front-end" icon="TableLayout">
-    Front-end là giao diện người dùng.
-  </Card>
-  <Card title="Back-end" icon="Server">
-    Back-end là những thứ được xử lý phía sau Front-end.
-  </Card>
-  <Card title="Linux" icon="Server">
-    Linux là một hệ điều hành.
-  </Card>
-  <Card title="Linux Server" icon="Server">
-    Linux Server là một máy chủ giúp chạy các ứng dụng web trên hệ điều hành
-    Linux.
-  </Card>
-</CardGroup>
-```
-
-**Các cấu hình khác trên Card và Card Group:**
-
-<ResponseField name="title" type="string">
-`title` là tiêu đề mà bạn muốn đặt trong `Card`.
-
-Ví dụ: `Front-end là gì`
-
-</ResponseField>
-
-<ResponseField name="icon" type="string" default="Folder">
-`icon` là biểu tượng mà bạn muốn đặt trong `Card`.
-
-Ví dụ: `TableLayout`
-
-Danh sách các Icon đang sử dụng trên dự án HR Documentation:
-
-- `ArrowLeft`
-- `ArrowLeftShort`
-- `ArrowRight`
-- `ArrowRightShort`
-- `CaretDown`
-- `CaretUp`
-- `Chat`
-- `Check`
-- `Facebook`
-- `GitHub`
-- `Linkedin`
-- `ReactIcon`
-- `Twitter`
-- `TableLayout`
-- `Server`
-- `SwatchBook`
-- `Folder`
-- `FileCode`
-
-</ResponseField>
-
-<ResponseField name="href" type="string">
-`href` là liên kết mà bạn muốn đặt trong Card.
-
-Ví dụ: `https://hrpenci.site/group-hr`
-
-</ResponseField>
-
-<ResponseField name="cols" type="string" default="2">
-`cols` là số cột mà bạn muốn đặt trong `CardGroup`.
-
-<Tabs>
-  <Tab title="1 cột">
-    Cú pháp:
-
-    ```mdx filename="Ví dụ về Card Group 1 cột"
-    <CardGroup cols={1}>
-      <Card title="Front-end" icon="TableLayout">
-        Front-end là giao diện người dùng.
-      </Card>
-      <Card title="Back-end" icon="Server">
-        Back-end là những thứ được xử lý phía sau Front-end.
-      </Card>
-    </CardGroup>
-    ```
-
-    Kết quả:
-
-    <CardGroup cols={1}>
-      <Card title="Front-end" icon="TableLayout">
-        Front-end là giao diện người dùng.
-      </Card>
-      <Card title="Back-end" icon="Server">
-        Back-end là những thứ được xử lý phía sau Front-end.
-      </Card>
-    </CardGroup>
-
-  </Tab>
-  <Tab title="2 cột">
-    Cú pháp:
-
-    ```mdx filename="Ví dụ về Card Group 2 cột"
-    <CardGroup cols={2}>
-      <Card title="Front-end" icon="TableLayout">
-        Front-end là giao diện người dùng.
-      </Card>
-      <Card title="Back-end" icon="Server">
-        Back-end là những thứ được xử lý phía sau Front-end.
-      </Card>
-    </CardGroup>
-    ```
-
-    Kết quả:
-
-    <CardGroup cols={2}>
-      <Card title="Front-end" icon="TableLayout">
-        Front-end là giao diện người dùng.
-      </Card>
-      <Card title="Back-end" icon="Server">
-        Back-end là những thứ được xử lý phía sau Front-end.
-      </Card>
-    </CardGroup>
-
-  </Tab>
-  <Tab title="3 cột">
-    Cú pháp:
-
-    ```mdx filename="Ví dụ về Card Group 3 cột"
-    <CardGroup cols={3}>
-      <Card title="Front-end" icon="TableLayout">
-        Front-end là giao diện người dùng.
-      </Card>
-      <Card title="Back-end" icon="Server">
-        Back-end là những thứ được xử lý phía sau Front-end.
-      </Card>
-    </CardGroup>
-    ```
-
-    Kết quả:
-
-    <CardGroup cols={3}>
-      <Card title="Front-end" icon="TableLayout">
-        Front-end là giao diện người dùng.
-      </Card>
-      <Card title="Back-end" icon="Server">
-        Back-end là những thứ được xử lý phía sau Front-end.
-      </Card>
-    </CardGroup>
-
-  </Tab>
-  <Tab title="4 cột">
-    Cú pháp:
-
-    ```mdx filename="Ví dụ về Card Group 4 cột"
-    <CardGroup cols={4}>
-      <Card title="Front-end" icon="TableLayout">
-        Front-end là giao diện người dùng.
-      </Card>
-      <Card title="Back-end" icon="Server">
-        Back-end là những thứ được xử lý phía sau Front-end.
-      </Card>
-    </CardGroup>
-    ```
-
-    Kết quả:
-
-    <CardGroup cols={4}>
-      <Card title="Front-end" icon="TableLayout">
-        Front-end là giao diện người dùng.
-      </Card>
-      <Card title="Back-end" icon="Server">
-        Back-end là những thứ được xử lý phía sau Front-end.
-      </Card>
-    </CardGroup>
-
-  </Tab>
-</Tabs>
-
-</ResponseField>
-
-#### 5.2. Tabs
-
-<Tabs>
-  <Tab title="IT Recruiter">
-    Tài liệu trong này dành cho các bạn HR đang tuyển dụng về IT.
-  </Tab>
-  <Tab title="Design Recruiter">
-    Tài liệu trong này dành cho các bạn HR đang tuyển dụng về Design.
-  </Tab>
-</Tabs>
-
-```mdx
-<Tabs>
-  <Tab title="IT Recruiter">
-    Tài liệu trong này dành cho các bạn HR đang tuyển dụng về IT.
-  </Tab>
-  <Tab title="Design Recruiter">
-    Tài liệu trong này dành cho các bạn HR đang tuyển dụng về Design.
-  </Tab>
-</Tabs>
-```
-
-**Các cấu hình khác trên Tabs:**
-
-<ResponseField name="title" type="string">
-`title` là tiêu đề mà bạn muốn đặt trong `Tab`.
-
-Ví dụ: `IT Recruiter`
-
-</ResponseField>
-
-#### 5.3. Callout
-
-Sử dụng chú thích để thêm ngữ cảnh bắt mắt vào nội dung của bạn.
-
-<Tabs>
-  <Tab title="Note">
-    <Note>Đây là một ghi chú</Note>
-    ```mdx
-    <Note>Đây là một ghi chú</Note>
-    ```
-  </Tab>
-  <Tab title="Warning">
-    <Warning>Đây là một cảnh báo</Warning>
-    ```mdx
-    <Warning>Đây là một cảnh báo</Warning>
-    ```
-  </Tab>
-  <Tab title="Info">
-    <Info>Đây là một thông tin</Info>
-    ```mdx
-    <Info>Đây là một thông tin</Info>
-    ```
-  </Tab>
-  <Tab title="Tip">
-    <Tip>Đây là một tip</Tip>
-    ```mdx
-    <Tip>Đây là một tip</Tip>
-    ```
-  </Tab>
-  <Tab title="Check">
-    <Check>Đây là một trạng thái đã được đánh dấu</Check>
-    ```mdx
-    <Check>Đây là một trạng thái đã được đánh dấu</Check>
-    ```
-  </Tab>
-</Tabs>
-
-### 6. Commit và push thay đổi
+### 5. Commit và push thay đổi
 
 Sau khi đã hoàn thành các thay đổi, bạn cần phải thực hiện commit và push các
 thay đổi lên branch mới của bạn. Bạn có thể sử dụng các lệnh sau để thực hiện
@@ -361,7 +84,7 @@ git push origin ten-nhanh-moi
 
 Với "ten-nhanh-moi" là tên của branch mà bạn vừa tạo ở bước trước.
 
-### 7. Tạo Pull Request
+### 6. Tạo Pull Request
 
 Sau khi bạn đã push các thay đổi lên branch mới của mình, bạn cần tạo một Pull
 Request để yêu cầu xem xét và chấp nhận các thay đổi của bạn vào dự án chính.
@@ -380,6 +103,8 @@ sẽ xem xét và kiểm tra các thay đổi của bạn. Nếu chúng tôi th�
 Request của bạn vào branch chính của dự án. Nếu cần thay đổi hoặc chỉnh sửa,
 chúng tôi sẽ cập nhật với bạn để cùng nhau hoàn thiện và nâng cao chất lượng của
 dự án.
+
+</Steps>
 
 ## Quy tắc đóng góp
 
