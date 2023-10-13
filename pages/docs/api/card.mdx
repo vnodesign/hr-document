@@ -1,0 +1,213 @@
+---
+title: Card và Card Group
+---
+
+# Card và Card Group
+
+**Với Card:**
+
+<Card title="Front-end là gì?" icon="TableLayout" href="/docs/hr/front-end">
+  Đây là cách bạn sử dụng card có biểu tượng và liên kết. Bấm vào card này sẽ
+  đưa bạn đến trang Front-end là gì.
+</Card>
+
+```mdx
+<Card title="Front-end là gì?" icon="TableLayout" href="/docs/hr/front-end">
+  Đây là cách bạn sử dụng card có biểu tượng và liên kết. Bấm vào card này sẽ
+  đưa bạn đến trang Front-end là gì.
+</Card>
+```
+
+**Với Card Group:**
+
+<CardGroup cols={2}>
+  <Card title="Front-end" icon="TableLayout">
+    Front-end là giao diện người dùng.
+  </Card>
+  <Card title="Back-end" icon="Server">
+    Back-end là những thứ được xử lý phía sau Front-end.
+  </Card>
+  <Card title="Linux" icon="Server">
+    Linux là một hệ điều hành
+  </Card>
+  <Card title="Linux Server" icon="Server">
+    Linux Server là một máy chủ giúp chạy các ứng dụng web trên hệ điều hành
+    Linux.
+  </Card>
+</CardGroup>
+
+```mdx
+<CardGroup cols={2}>
+  <Card title="Front-end" icon="TableLayout">
+    Front-end là giao diện người dùng.
+  </Card>
+  <Card title="Back-end" icon="Server">
+    Back-end là những thứ được xử lý phía sau Front-end.
+  </Card>
+  <Card title="Linux" icon="Server">
+    Linux là một hệ điều hành.
+  </Card>
+  <Card title="Linux Server" icon="Server">
+    Linux Server là một máy chủ giúp chạy các ứng dụng web trên hệ điều hành
+    Linux.
+  </Card>
+</CardGroup>
+```
+
+**Các cấu hình khác trên Card và Card Group:**
+
+<ResponseField name="title" type="string">
+`title` là tiêu đề mà bạn muốn đặt trong `Card`.
+
+Ví dụ: `Front-end là gì`
+
+</ResponseField>
+
+<ResponseField name="icon" default="Folder" type="string">
+`icon` là biểu tượng mà bạn muốn đặt trong `Card`.
+
+Ví dụ: `TableLayout`
+
+Danh sách các Icon đang sử dụng trên dự án HR Documentation:
+
+- `ArrowLeft`
+- `ArrowLeftShort`
+- `ArrowRight`
+- `ArrowRightShort`
+- `CaretDown`
+- `CaretUp`
+- `Chat`
+- `Check`
+- `Facebook`
+- `GitHub`
+- `Linkedin`
+- `ReactIcon`
+- `Twitter`
+- `TableLayout`
+- `Server`
+- `SwatchBook`
+- `Folder`
+- `FileCode`
+
+</ResponseField>
+
+<ResponseField name="href" type="string">
+`href` là liên kết mà bạn muốn đặt trong `Card`.
+
+Ví dụ: `https://hrpenci.site/group-hr`
+
+</ResponseField>
+
+<ResponseField name="cols" default="2" type="number">
+`cols` là số cột mà bạn muốn đặt trong `CardGroup`.
+
+<Note>Trên các thiết bị di động, thì các cột sẽ hiển thị thành một.</Note>
+
+<Tabs>
+  <Tab title="1 cột">
+    Cú pháp:
+
+    ```mdx filename="Ví dụ về Card Group 1 cột"
+    <CardGroup cols={1}>
+      <Card title="Front-end" icon="TableLayout">
+        Front-end là giao diện người dùng.
+      </Card>
+      <Card title="Back-end" icon="Server">
+        Back-end là những thứ được xử lý phía sau Front-end.
+      </Card>
+    </CardGroup>
+    ```
+
+    Kết quả:
+
+    <CardGroup cols={1}>
+      <Card title="Front-end" icon="TableLayout">
+        Front-end là giao diện người dùng.
+      </Card>
+      <Card title="Back-end" icon="Server">
+        Back-end là những thứ được xử lý phía sau Front-end.
+      </Card>
+    </CardGroup>
+
+  </Tab>
+  <Tab title="2 cột">
+    Cú pháp:
+
+    ```mdx filename="Ví dụ về Card Group 2 cột"
+    <CardGroup cols={2}>
+      <Card title="Front-end" icon="TableLayout">
+        Front-end là giao diện người dùng.
+      </Card>
+      <Card title="Back-end" icon="Server">
+        Back-end là những thứ được xử lý phía sau Front-end.
+      </Card>
+    </CardGroup>
+    ```
+
+    Kết quả:
+
+    <CardGroup cols={2}>
+      <Card title="Front-end" icon="TableLayout">
+        Front-end là giao diện người dùng.
+      </Card>
+      <Card title="Back-end" icon="Server">
+        Back-end là những thứ được xử lý phía sau Front-end.
+      </Card>
+    </CardGroup>
+
+  </Tab>
+  <Tab title="3 cột">
+    Cú pháp:
+
+    ```mdx filename="Ví dụ về Card Group 3 cột"
+    <CardGroup cols={3}>
+      <Card title="Front-end" icon="TableLayout">
+        Front-end là giao diện người dùng.
+      </Card>
+      <Card title="Back-end" icon="Server">
+        Back-end là những thứ được xử lý phía sau Front-end.
+      </Card>
+    </CardGroup>
+    ```
+
+    Kết quả:
+
+    <CardGroup cols={3}>
+      <Card title="Front-end" icon="TableLayout">
+        Front-end là giao diện người dùng.
+      </Card>
+      <Card title="Back-end" icon="Server">
+        Back-end là những thứ được xử lý phía sau Front-end.
+      </Card>
+    </CardGroup>
+
+  </Tab>
+  <Tab title="4 cột">
+    Cú pháp:
+
+    ```mdx filename="Ví dụ về Card Group 4 cột"
+    <CardGroup cols={4}>
+      <Card title="Front-end" icon="TableLayout">
+        Front-end là giao diện người dùng.
+      </Card>
+      <Card title="Back-end" icon="Server">
+        Back-end là những thứ được xử lý phía sau Front-end.
+      </Card>
+    </CardGroup>
+    ```
+
+    Kết quả:
+
+    <CardGroup cols={4}>
+      <Card title="Front-end" icon="TableLayout">
+        Front-end là giao diện người dùng.
+      </Card>
+      <Card title="Back-end" icon="Server">
+        Back-end là những thứ được xử lý phía sau Front-end.
+      </Card>
+    </CardGroup>
+
+  </Tab>
+</Tabs>
+
+</ResponseField>

@@ -1,0 +1,37 @@
+---
+title: Metadata
+description: Các thông tin về Metadata được sử dụng trên dự án HR Documentation
+---
+
+# Metadata
+
+Metadata là các thông tin mà chúng tôi sử dụng trên dự án của mình, để hỗ trợ
+cho các công cụ tìm kiếm.
+
+```mdx filename="example-metadata.mdx"
+---
+title: Metadata
+description: Các thông tin về Metadata được sử dụng trên dự án HR Documentation
+---
+```
+
+<ResponseField name="title" required optional="từ 50 đến 60 ký tự" type="string">
+`title` là tiêu đề mà bạn muốn đặt trong tệp `mdx`.
+
+Ví dụ: `Metadata`
+
+</ResponseField>
+
+<ResponseField name="description" optional="155 ký tự" type="string">
+`description` là mô tả mà bạn muốn đặt trong tệp `mdx`. Đây là mô tả sẽ hiển thị khi bạn chia sẻ liên kết lên các trang mạng xã hội như Facebook và LinkedIn.
+
+Ví dụ: `Các thông tin về Metadata được sử dụng trên dự án HR Documentation`
+
+</ResponseField>
+
+<ResponseField name="image" optional="tối thiểu là 1200 x 630 pixel" type="string">
+`image` là ảnh thu nhỏ mà bạn muốn đặt trong tệp `mdx`. Đây là ảnh thumbnail sẽ hiển thị khi bạn chia sẻ liên kết lên các trang mạng xã hội như Facebook và LinkedIn.
+
+Ví dụ: `/static/documentation-card.png`
+
+</ResponseField>
