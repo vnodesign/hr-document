@@ -1,0 +1,56 @@
+name: Translate Documentation
+description: Send documents that need to be translated
+title: "[Translate languages]: "
+labels: ["translate", "english", "vietnamese"]
+assignees:
+  - tuanductran
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this translate documentation!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: input
+    id: translate
+    attributes:
+      label: Link the document you need to translate
+      description: Link to the document you need translated into English or Vietnamese
+      placeholder: ex. https://hrpenci.site/docs/hr/front-end
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      description: Select the language you need to translate
+      options:
+        - Vietnamese (Default)
+        - English
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: translate-any
+    attributes:
+      label: Do you need to translate any other pages?
+      multiple: true
+      options:
+        - All pages
+        - HR document scope only
+        - Dev document scope only
+        - Designer document scope only
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/vnodesign/hr-document/blob/v2/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
