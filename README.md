@@ -2,7 +2,7 @@
 
 ## Giới thiệu về HR Documentation
 
-[HR Documentation](https://hrpenci.site) là một nền tảng chia sẻ các kiến thức
+**HR Documentation** là một nền tảng chia sẻ các kiến thức
 và tài liệu về Front End, Back End, Linux và Design dành cho những bạn HR mới
 bước chân vào nghề tuyển dụng.
 
